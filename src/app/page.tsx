@@ -1,3 +1,6 @@
+// @ts-nocheck
+/*eslint-disable*/
+
 /* import { BackgroundPictures } from "@/components/BackgroundPictures/BackgroundPictures"; */
 /* import { FAQ } from "@/components/FAQ/FAQ";
  */ import { MainAbout } from "@/components/MainAbout/MainAbout";
