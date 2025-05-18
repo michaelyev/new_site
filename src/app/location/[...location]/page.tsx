@@ -17,7 +17,6 @@ import { OurServices } from "@/components/OurServices/OurServices";
 import { FormMain } from "@/components/FormMain/FormMain";
 import { CostTables } from "@/components/CostTables/CostTables";
 import { ThumbsSwiper } from "@/components/ThumbsSwiper/ThumbsSwiper";
-import { GenerateEstimate } from "@/components/Chatbot/GenerateEstimate";
 import { PageNav } from "@/components/PageNav/PageNav";
 import { serviceHeadings } from "@/constants/ourServices/ourServices";
 import Licensing from "@/components/Licensing/Licensing";
@@ -89,7 +88,7 @@ export default async function Page({
 			</FormMain>
 			<PageNav />
 			<OurServices {...props.ourServices} location={props.city} />
-			<GenerateEstimate />
+		
 			<ServicesAbout {...props.about} isMobile={isMobile} />
 			{/* <OurServices {...props.ourServices} /> */}
 			{/* <TopProducts /> */}
