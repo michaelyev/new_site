@@ -5,40 +5,40 @@ import type { HeaderData, HeaderIcons } from "@/types/header/headerData";
 export const ICON_SIZE = 26;
 
 export const headerData: HeaderData[] = [
-	/* {
+  /* {
 		id: "products",
 		title: "Products",
 		href: "/catalog",
 		dropdown: true,
 	}, */
-	{
-		id: "services",
-		title: "Services",
-		href: "/services",
-		dropdown: true,
-	},
-	/* {
+  {
+    id: "services",
+    title: "Services",
+    href: "/services",
+    dropdown: true,
+  },
+  /* {
 		id: "about",
 		title: "About Us",
 		href: "/about",
 		dropdown: false,
 	}, */
-	/* {
+  /* {
 		id: "blog",
 		title: "Blog",
 		href: "/blog",
 		dropdown: false,
 	}, */
-	{
-		id: "contact",
-		title: "Contact",
-		href: "/contact",
-		dropdown: false,
-	},
+  {
+    id: "contact",
+    title: "Contact",
+    href: "/contact",
+    dropdown: false,
+  },
 ];
 
 export const headerIcons: HeaderIcons[] = [
-	,/* {
+  ,/* {
 		id: 1,
 		icon: header_liked,
 		alt: "header_liked_icon",
@@ -50,7 +50,7 @@ export const headerIcons: HeaderIcons[] = [
 		alt: "header_cart_icon",
 		href: "/cart",
 	} */
-	/* ,
+  /* ,
 	{
 		id: 3,
 		icon: header_user,
@@ -60,80 +60,80 @@ export const headerIcons: HeaderIcons[] = [
 ];
 
 interface PopularService {
-	name: string;
-	link: string;
+  name: string;
+  link: string;
 }
 
 interface Type {
-	name: string;
-	link: string;
-	popularServices?: PopularService[];
+  name: string;
+  link: string;
+  popularServices?: PopularService[];
 }
 
 export interface Service {
-	link: string;
-	text: string;
-	id?: string;
-	types: Type[];
+  link: string;
+  text: string;
+  id?: string;
+  types: Type[];
 }
 
 export const dropdowns: { [key: string]: Service[] } = {
-	services: [
-		
-		{
-			id: "adu",
-			link: "/basement-waterproofing-seattle",
-			text: "Basement Waterproofing",
-			types: [
-				{
-					name: "Bathroom Tile",
-					link: "/bathroom-remode/bathroom-tile",
-				},
-				{
-					name: "Bathroom Cabinetry",
-					link: "/cabinet-installation/bathroom-cabinetry",
-				},
-				{
-					name: "Bathroom Plumbing",
-					link: "/bathroom-remode/bathroom-plumbing",
-				},
-				{
-					name: "Bathroom Fixture",
-					link: "/bathroom-remode/bathroom-fixtures",
-				},
-				{
-					name: "Bathroom Shower",
-					link: "/bathroom-remode/bathroom-shower",
-				},
-			],
-		},{
-			id: "adu",
-			link: "/adu-builder-seattle",
-			text: "ADU and DADU",
-			types: [
-				{
-					name: "Bathroom Tile",
-					link: "/bathroom-remode/bathroom-tile",
-				},
-				{
-					name: "Bathroom Cabinetry",
-					link: "/cabinet-installation/bathroom-cabinetry",
-				},
-				{
-					name: "Bathroom Plumbing",
-					link: "/bathroom-remode/bathroom-plumbing",
-				},
-				{
-					name: "Bathroom Fixture",
-					link: "/bathroom-remode/bathroom-fixtures",
-				},
-				{
-					name: "Bathroom Shower",
-					link: "/bathroom-remode/bathroom-shower",
-				},
-			],
-		},
-		/* {
+  services: [
+    {
+      id: "adu",
+      link: "/basement-waterproofing-seattle",
+      text: "Basement Waterproofing",
+      types: [
+        {
+          name: "Bathroom Tile",
+          link: "/bathroom-remode/bathroom-tile",
+        },
+        {
+          name: "Bathroom Cabinetry",
+          link: "/cabinet-installation/bathroom-cabinetry",
+        },
+        {
+          name: "Bathroom Plumbing",
+          link: "/bathroom-remode/bathroom-plumbing",
+        },
+        {
+          name: "Bathroom Fixture",
+          link: "/bathroom-remode/bathroom-fixtures",
+        },
+        {
+          name: "Bathroom Shower",
+          link: "/bathroom-remode/bathroom-shower",
+        },
+      ],
+    },
+    {
+      id: "adu",
+      link: "/adu-builder-seattle",
+      text: "ADU and DADU",
+      types: [
+        {
+          name: "Bathroom Tile",
+          link: "/bathroom-remode/bathroom-tile",
+        },
+        {
+          name: "Bathroom Cabinetry",
+          link: "/cabinet-installation/bathroom-cabinetry",
+        },
+        {
+          name: "Bathroom Plumbing",
+          link: "/bathroom-remode/bathroom-plumbing",
+        },
+        {
+          name: "Bathroom Fixture",
+          link: "/bathroom-remode/bathroom-fixtures",
+        },
+        {
+          name: "Bathroom Shower",
+          link: "/bathroom-remode/bathroom-shower",
+        },
+      ],
+    },
+    /* {
 			id: "electrical",
 			link: "/electrical",
 			text: "Electrical Installation",
@@ -172,7 +172,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		/* {
+    /* {
 			id: "landscaping",
 			link: "/landscaping",
 			text: "Landscaping Services",
@@ -218,7 +218,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		/* {
+    /* {
 			id: "doors",
 			link: "/door-installation",
 			text: "Doors",
@@ -247,34 +247,34 @@ export const dropdowns: { [key: string]: Service[] } = {
 				{ name: "Entry Door", link: "/door-installation/entry-door" },
 			],
 		}, */
-		{
-			id: "bathrooms",
-			link: "/bathroom-remodel-seattle",
-			text: "Bathroom Remodel",
-			types: [
-				{
-					name: "Bathroom Tile",
-					link: "/bathroom-remode/bathroom-tile",
-				},
-				{
-					name: "Bathroom Cabinetry",
-					link: "/cabinet-installation/bathroom-cabinetry",
-				},
-				{
-					name: "Bathroom Plumbing",
-					link: "/bathroom-remode/bathroom-plumbing",
-				},
-				{
-					name: "Bathroom Fixture",
-					link: "/bathroom-remode/bathroom-fixtures",
-				},
-				{
-					name: "Bathroom Shower",
-					link: "/bathroom-remode/bathroom-shower",
-				},
-			],
-		},
-		/* {
+    {
+      id: "bathrooms",
+      link: "/bathroom-remodel-seattle",
+      text: "Bathroom Remodel",
+      types: [
+        {
+          name: "Bathroom Tile",
+          link: "/bathroom-remode/bathroom-tile",
+        },
+        {
+          name: "Bathroom Cabinetry",
+          link: "/cabinet-installation/bathroom-cabinetry",
+        },
+        {
+          name: "Bathroom Plumbing",
+          link: "/bathroom-remode/bathroom-plumbing",
+        },
+        {
+          name: "Bathroom Fixture",
+          link: "/bathroom-remode/bathroom-fixtures",
+        },
+        {
+          name: "Bathroom Shower",
+          link: "/bathroom-remode/bathroom-shower",
+        },
+      ],
+    },
+    /* {
 			id: "plumbing",
 			link: "/plumbing-services",
 			text: "Plumbing Services",
@@ -313,47 +313,47 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		
-		{
-			id: "attic",
-			link: "/attic-finishing-seattle",
-			text: "Attic Finishing",
-			types: [
-				{
-					name: "Attic Insulation",
-					link: "/attic-finishing/attic-insulation",
-				},
-				{
-					name: "Attic Drywall",
-					link: "/attic-finishing/attic-drywall",
-				},
-				{
-					name: "Attic Windows and Skylights",
-					link: "/attic-finishing/attic-windows-and-skylights",
-				},
-				{
-					name: "Attic Storage Solutions",
-					link: "/attic-finishing/attic-storage-solutions",
-				},
-				{
-					name: "Attic Ventilation",
-					link: "/attic-finishing/attic-ventilation",
-				},
-				{
-					name: "Attic Lighting",
-					link: "/attic-finishing/attic-lighting",
-				},
-				{
-					name: "Attic Heating and Cooling",
-					link: "/attic-finishing/attic-heating-and-cooling",
-				},
-				{
-					name: "Attic Bathroom Addition",
-					link: "/attic-finishing/attic-bathroom-addition",
-				},
-			],
-		},
-		/* {
+
+    {
+      id: "attic",
+      link: "/attic-finishing-seattle",
+      text: "Attic Finishing",
+      types: [
+        {
+          name: "Attic Insulation",
+          link: "/attic-finishing/attic-insulation",
+        },
+        {
+          name: "Attic Drywall",
+          link: "/attic-finishing/attic-drywall",
+        },
+        {
+          name: "Attic Windows and Skylights",
+          link: "/attic-finishing/attic-windows-and-skylights",
+        },
+        {
+          name: "Attic Storage Solutions",
+          link: "/attic-finishing/attic-storage-solutions",
+        },
+        {
+          name: "Attic Ventilation",
+          link: "/attic-finishing/attic-ventilation",
+        },
+        {
+          name: "Attic Lighting",
+          link: "/attic-finishing/attic-lighting",
+        },
+        {
+          name: "Attic Heating and Cooling",
+          link: "/attic-finishing/attic-heating-and-cooling",
+        },
+        {
+          name: "Attic Bathroom Addition",
+          link: "/attic-finishing/attic-bathroom-addition",
+        },
+      ],
+    },
+    /* {
 			id: "architecture",
 			link: "/architectural-service",
 			text: "Architecture",
@@ -396,46 +396,46 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		{
-			id: "basement",
-			link: "/basement-finishing-seattle",
-			text: "Basement Finishing",
-			types: [
-				{
-					name: "Basement Flooring",
-					link: "/flooring/basement-flooring",
-				},
-				{
-					name: "Basement Remodel",
-					link: "/basement-finishing/basement-remodel",
-				},
-				{
-					name: "Basement Entertainment Center",
-					link: "/basement-finishing/basement-entertainment-center",
-				},
-				{
-					name: "Basement Bathroom",
-					link: "/basement-finishing/basement-bathroom",
-				},
-				{
-					name: "Basement Waterproofing",
-					link: "/basement-finishing/basement-waterproofing",
-				},
-				{
-					name: "Basement Insulation",
-					link: "/basement-finishing/basement-insulation",
-				},
-				{
-					name: "Basement Bar",
-					link: "/basement-finishing/basement-bar",
-				},
-				{
-					name: "Basement Windows",
-					link: "/basement-finishing/basement-windows",
-				},
-			],
-		},
-		/* {
+    {
+      id: "basement",
+      link: "/basement-finishing-seattle",
+      text: "Basement Finishing",
+      types: [
+        {
+          name: "Basement Flooring",
+          link: "/flooring/basement-flooring",
+        },
+        {
+          name: "Basement Remodel",
+          link: "/basement-finishing/basement-remodel",
+        },
+        {
+          name: "Basement Entertainment Center",
+          link: "/basement-finishing/basement-entertainment-center",
+        },
+        {
+          name: "Basement Bathroom",
+          link: "/basement-finishing/basement-bathroom",
+        },
+        {
+          name: "Basement Waterproofing",
+          link: "/basement-finishing/basement-waterproofing",
+        },
+        {
+          name: "Basement Insulation",
+          link: "/basement-finishing/basement-insulation",
+        },
+        {
+          name: "Basement Bar",
+          link: "/basement-finishing/basement-bar",
+        },
+        {
+          name: "Basement Windows",
+          link: "/basement-finishing/basement-windows",
+        },
+      ],
+    },
+    /* {
 			id: "hvac",
 			link: "/hvac-installation",
 			text: "HVAC Installation",
@@ -451,7 +451,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		/* {
+    /* {
 			id: "excavation",
 			link: "/excavation-contractors",
 			text: "Excavation Service",
@@ -475,39 +475,39 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		{
-			id: "kitchen",
-			link: "/kitchen-remodel-seattle",
-			text: "Kitchen Remodel",
-			types: [
-				{
-					name: "Kitchen Cabinets",
-					link: "/cabinet-installation/kitchen-cabinets",
-				},
-				{
-					name: "Kitchen Countertops",
-					link: "/countertop-installation/kitchen-countertops",
-				},
-				{
-					name: "Kitchen Flooring",
-					link: "/flooring/kitchen-flooring",
-				},
-				{
-					name: "Kitchen Appliances",
-					link: "/service/kitchen-appliances",
-				},
-				{
-					name: "Kitchen Lighting",
-					link: "/kitchen-remodel/kitchen-lighting",
-				},
-				{
-					name: "Kitchen Plumbing",
-					link: "/kitchen-remodel/kitchen-plumbing",
-				},
-				{ name: "Patio Kitchen", link: "/landscaping/patio-kitchen" },
-			],
-		},
-		/* {
+    {
+      id: "kitchen",
+      link: "/kitchen-remodel-seattle",
+      text: "Kitchen Remodel",
+      types: [
+        {
+          name: "Kitchen Cabinets",
+          link: "/cabinet-installation/kitchen-cabinets",
+        },
+        {
+          name: "Kitchen Countertops",
+          link: "/countertop-installation/kitchen-countertops",
+        },
+        {
+          name: "Kitchen Flooring",
+          link: "/flooring/kitchen-flooring",
+        },
+        {
+          name: "Kitchen Appliances",
+          link: "/service/kitchen-appliances",
+        },
+        {
+          name: "Kitchen Lighting",
+          link: "/kitchen-remodel/kitchen-lighting",
+        },
+        {
+          name: "Kitchen Plumbing",
+          link: "/kitchen-remodel/kitchen-plumbing",
+        },
+        { name: "Patio Kitchen", link: "/landscaping/patio-kitchen" },
+      ],
+    },
+    /* {
 			id: "windows",
 			link: "/window-installation",
 			text: "Window Services",
@@ -534,10 +534,10 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		
-		/* {
+
+    /* {
 			id: "siding",
-			link: "/siding-installation-victoria",
+			link: "/siding-installation-seattle",
 			text: "Siding",
 			types: [
 				{
@@ -570,7 +570,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		/* {
+    /* {
 			id: "painting",
 			link: "/painters",
 			text: "Painting Services",
@@ -621,129 +621,129 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-	],
-	products: [
-		{
-			link: "/countertop-installation-near-me",
-			text: "Countertop Installation",
-			types: [
-				{
-					name: "Quartz Countertops",
-					link: "/quartz_countertops",
-				},
-				{
-					name: "Marble Countertops",
-					link: "/marble_countertops",
-				},
-				{
-					name: "Granite Countertops",
-					link: "/granite_countertops",
-				},
-				{
-					name: "Onyx Countertops",
-					link: "/onyx_countertops",
-				},
-				{
-					name: "Remnants",
-					link: "/remnants",
-				},
-				{
-					name: "Travertine Countertops",
-					link: "/travertine_countertops",
-				},
-				{
-					name: "Limestone Countertops",
-					link: "/limestone_countertops",
-				},
-				{
-					name: "Soapstone Countertops",
-					link: "/soapstone_countertops",
-				},
-			],
-		},
-		{
-			link: "/flooring",
-			text: "Flooring",
-			types: [
-				{
-					name: "Hardwood Flooring",
-					link: "/hardwood_flooring",
-					popularServices: [
-						{
-							name: "Hardwood Floor Installation",
-							link: "/hardwood_floor_installation",
-						},
-						{
-							name: "Hardwood Floor Refinishing",
-							link: "/hardwood_floor_refinishing",
-						},
-						{
-							name: "Custom Staining",
-							link: "/hardwood_custom_staining",
-						},
-						{
-							name: "Wood Floor Repair",
-							link: "/hardwood_floor_repair",
-						},
-						{
-							name: "Patterned Wood Flooring",
-							link: "/hardwood_patterned_flooring",
-						},
-					],
-				},
-				{
-					name: "Laminate Flooring",
-					link: "/laminate_flooring",
-					popularServices: [
-						{
-							name: "Laminate Floor Installation",
-							link: "/laminate_floor_installation",
-						},
-						{
-							name: "Laminate Floor Repair",
-							link: "/laminate_floor_repair",
-						},
-						{
-							name: "Moisture-Resistant Laminate",
-							link: "/laminate_moisture_resistant",
-						},
-						{
-							name: "Embossed Laminate Designs",
-							link: "/laminate_embossed_designs",
-						},
-						{
-							name: "Laminate Floor Removal",
-							link: "/laminate_floor_removal",
-						},
-					],
-				},
-				{
-					name: "Tile Flooring",
-					link: "/tile_flooring",
-					popularServices: [
-						{
-							name: "Tile Floor Installation",
-							link: "/tile_floor_installation",
-						},
-						{
-							name: "Tile Floor Repair",
-							link: "/tile_floor_repair",
-						},
-						{
-							name: "Grout Cleaning",
-							link: "/tile_grout_cleaning",
-						},
-						{
-							name: "Porcelain Tile Options",
-							link: "/tile_porcelain_options",
-						},
-						{
-							name: "Custom Tile Patterns",
-							link: "/tile_custom_patterns",
-						},
-					],
-				},
-			],
-		},
-	],
+  ],
+  products: [
+    {
+      link: "/countertop-installation-near-me",
+      text: "Countertop Installation",
+      types: [
+        {
+          name: "Quartz Countertops",
+          link: "/quartz_countertops",
+        },
+        {
+          name: "Marble Countertops",
+          link: "/marble_countertops",
+        },
+        {
+          name: "Granite Countertops",
+          link: "/granite_countertops",
+        },
+        {
+          name: "Onyx Countertops",
+          link: "/onyx_countertops",
+        },
+        {
+          name: "Remnants",
+          link: "/remnants",
+        },
+        {
+          name: "Travertine Countertops",
+          link: "/travertine_countertops",
+        },
+        {
+          name: "Limestone Countertops",
+          link: "/limestone_countertops",
+        },
+        {
+          name: "Soapstone Countertops",
+          link: "/soapstone_countertops",
+        },
+      ],
+    },
+    {
+      link: "/flooring",
+      text: "Flooring",
+      types: [
+        {
+          name: "Hardwood Flooring",
+          link: "/hardwood_flooring",
+          popularServices: [
+            {
+              name: "Hardwood Floor Installation",
+              link: "/hardwood_floor_installation",
+            },
+            {
+              name: "Hardwood Floor Refinishing",
+              link: "/hardwood_floor_refinishing",
+            },
+            {
+              name: "Custom Staining",
+              link: "/hardwood_custom_staining",
+            },
+            {
+              name: "Wood Floor Repair",
+              link: "/hardwood_floor_repair",
+            },
+            {
+              name: "Patterned Wood Flooring",
+              link: "/hardwood_patterned_flooring",
+            },
+          ],
+        },
+        {
+          name: "Laminate Flooring",
+          link: "/laminate_flooring",
+          popularServices: [
+            {
+              name: "Laminate Floor Installation",
+              link: "/laminate_floor_installation",
+            },
+            {
+              name: "Laminate Floor Repair",
+              link: "/laminate_floor_repair",
+            },
+            {
+              name: "Moisture-Resistant Laminate",
+              link: "/laminate_moisture_resistant",
+            },
+            {
+              name: "Embossed Laminate Designs",
+              link: "/laminate_embossed_designs",
+            },
+            {
+              name: "Laminate Floor Removal",
+              link: "/laminate_floor_removal",
+            },
+          ],
+        },
+        {
+          name: "Tile Flooring",
+          link: "/tile_flooring",
+          popularServices: [
+            {
+              name: "Tile Floor Installation",
+              link: "/tile_floor_installation",
+            },
+            {
+              name: "Tile Floor Repair",
+              link: "/tile_floor_repair",
+            },
+            {
+              name: "Grout Cleaning",
+              link: "/tile_grout_cleaning",
+            },
+            {
+              name: "Porcelain Tile Options",
+              link: "/tile_porcelain_options",
+            },
+            {
+              name: "Custom Tile Patterns",
+              link: "/tile_custom_patterns",
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };

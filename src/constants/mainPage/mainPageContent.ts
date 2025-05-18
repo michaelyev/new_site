@@ -44,10 +44,10 @@ export const mainPageContent = {
       },
     ],
     priceLine1:
-      "Cosmetic Remodel: 🎨 Fresh paint, new flooring, updated trim, and modern hardware in Victoria homes starting at $21+/m².",
+      "Cosmetic Remodel: 🎨 Fresh paint, new flooring, updated trim, and modern hardware in Seattle homes starting at $21+/m².",
 
     priceLine2:
-      "Whole Home Remodel: 🏡 Complete home upgrades in Victoria from $540+/m².",
+      "Whole Home Remodel: 🏡 Complete home upgrades in Seattle from $540+/m².",
 
     image1:
       "https://res.cloudinary.com/dzojhepyl/image/upload/v1735156395/kitchen_victoria/Kitchen_renovation_and_remodel_1735156314919_po8o5i.jpg",
@@ -65,9 +65,9 @@ export const mainPageContent = {
   ourServices: {
     h2: "Remodeling services of RENOVA",
     paragraph:
-      "Whether you’re planning to reconfigure a new build or refresh an existing home in Victoria, the process can involve around 50 ± 20 types of tasks. Many of these are heavy, messy, and sometimes hazardous, requiring specialized skills and professional tools — not to mention access to the right equipment.",
+      "Whether you’re planning to reconfigure a new build or refresh an existing home in Seattle, the process can involve around 50 ± 20 types of tasks. Many of these are heavy, messy, and sometimes hazardous, requiring specialized skills and professional tools — not to mention access to the right equipment.",
     ourServicesMarkdown:
-      "### Save Time and Money with Professional Crews in Victoria\n\nTo save money, many choose to handle some tasks themselves and hire professionals only for specific stages.\n\nThe outcome of this strategy is often predictable: additional costs for redoing work and frustration from trying to assign blame, sometimes long after the project is complete.\n\n**The conclusion is clear**: if you want to be satisfied not only with the cost but also with the results, avoid DIY finishing. Instead, hire a professional construction crew in Victoria.",
+      "### Save Time and Money with Professional Crews in Seattle\n\nTo save money, many choose to handle some tasks themselves and hire professionals only for specific stages.\n\nThe outcome of this strategy is often predictable: additional costs for redoing work and frustration from trying to assign blame, sometimes long after the project is complete.\n\n**The conclusion is clear**: if you want to be satisfied not only with the cost but also with the results, avoid DIY finishing. Instead, hire a professional construction crew in Seattle.",
   },
   howWeWork: {
     array: [

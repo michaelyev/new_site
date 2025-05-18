@@ -1,789 +1,822 @@
 interface ServiceCard {
-	heading: string;
-	paragraph: string;
-	url?: string;
-	price: string;
-	image: string;
-	alt?: string;
-	defaultLink?: string;
-	category?: string;
+  heading: string;
+  paragraph: string;
+  url?: string;
+  price: string;
+  image: string;
+  alt?: string;
+  defaultLink?: string;
+  category?: string;
 }
 
 type ServiceCategory = { [key: string]: ServiceCard[] }; // Key is string (category name), value is ServiceCard array
 
 export const ourServicesCardsData: ServiceCategory = {
-	all: [
-		{
-			"heading": "Kitchen Remodel",
-			"paragraph":
-				"Kitchen remodeling services: design and render your dream kitchen, order all materials, and provide delivery to build your perfect space.",
-			"image": "/our_services/Kitchen/Kitchen_Remodel.jpg",
-			"alt": "Open-concept kitchen and living area with white cabinets, marble-patterned countertops, and light wood flooring",
-			"price": "Price starts at $12,500 CAD",
-			"defaultLink": "kitchen-remodel-seattle",
-			"category": "kitchen"
-		},
-		{
-			"heading": "Bathroom Remodel",
-			"paragraph":
-				"Remodel your bathroom with experts, change your layout, or do a completely new addition; we have the system down for the best results.",
-			"image": "/our_services/Bathroom/Bathroom_Remodel.jpg",
-			"alt": "Modern bathroom with a black and white bathtub, glass shower, and white vanity with a cushioned chair.",
-			"price": "Price starts at $10,000 CAD",
-			"defaultLink": "bathroom-remodel-seattle",
-			"category": "bathroom",
+  all: [
+    {
+      heading: "Kitchen Remodel",
+      paragraph:
+        "Kitchen remodeling services: design and render your dream kitchen, order all materials, and provide delivery to build your perfect space.",
+      image: "/our_services/Kitchen/Kitchen_Remodel.jpg",
+      alt: "Open-concept kitchen and living area with white cabinets, marble-patterned countertops, and light wood flooring",
+      price: "Price starts at $12,500 ",
+      defaultLink: "kitchen-remodel-seattle",
+      category: "kitchen",
+    },
+    {
+      heading: "Bathroom Remodel",
+      paragraph:
+        "Remodel your bathroom with experts, change your layout, or do a completely new addition; we have the system down for the best results.",
+      image: "/our_services/Bathroom/Bathroom_Remodel.jpg",
+      alt: "Modern bathroom with a black and white bathtub, glass shower, and white vanity with a cushioned chair.",
+      price: "Price starts at $10,000 ",
+      defaultLink: "bathroom-remodel-seattle",
+      category: "bathroom",
+    },
+    {
+      heading: "Basement Finishing",
+      paragraph:
+        "Transform your basement into functional living space with our finishing services.",
+      image: "/our_services/Basement/Basement_Finishing.jpg",
+      alt: "Finished basement with stone columns, wood-like laminate flooring, and recessed ceiling lights.",
+      price: "Price starts at $12,500 ",
+      defaultLink: "basement-finishing-seattle",
+      category: "basement",
+    },
+    {
+      heading: "Attic Finishing",
+      paragraph:
+        "Transform your attic into usable living space with our finishing services.",
+      image: "/our_services/Attic/Attic_Finishing.jpg",
+      alt: "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
+      price: "Price starts at $12,500 ",
+      defaultLink: "attic-finishing-seattle",
+      category: "attic",
+    },
+    {
+      heading: "ADU and DADU building",
+      paragraph:
+        "Transform your attic into usable living space with our finishing services.",
+      image: "/our_services/Attic/Attic_Finishing.jpg",
+      alt: "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
+      price: "Price starts at $12,500 ",
+      defaultLink: "adu-builder-seattle",
+      category: "attic",
+    },
+    {
+      heading: "Basement Waterproofing",
+      paragraph:
+        "Transform your attic into usable living space with our finishing services.",
+      image: "/our_services/Attic/Attic_Finishing.jpg",
+      alt: "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
+      price: "Price starts at $12,500 ",
+      defaultLink: "basement-waterproofing-seattle",
+      category: "attic",
+    },
+  ],
+  tile: [
+    {
+      heading: "Tile Installation",
+      paragraph:
+        "Get professional tile installation for kitchens, bathrooms, and floors with a wide range of styles to choose from.",
+      image: "/our_services/Tile/tile_installation.jpg",
+      alt: "A man installing white tiles on a wall with careful precision and craftsmanship.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Floor Tile",
+      paragraph:
+        "Find the perfect floor tile for your home and let us handle the installation for a flawless finish.",
+      image: "/our_services/Tile/floor_tile.jpg",
+      alt: "A stylish white herringbone tile floor paired with a cozy fireplace.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Bathroom Tile",
+      paragraph:
+        "Upgrade your bathroom with beautiful tiles in various shapes and colors, installed at competitive rates.",
+      image: "/our_services/Tile/bathroom_tile.jpg",
+      alt: "A luxurious bathroom featuring a marble countertop and gold fixtures.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Shower Tile",
+      paragraph:
+        "Transform your shower with stunning tiles designed to suit your style and space.",
+      image: "/our_services/Tile/shower_tile.jpg",
+      alt: "A clean, modern shower with a glass door and a neatly folded towel.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Backsplash Tile",
+      paragraph:
+        "Give your kitchen a fresh look with our range of backsplash tiles, including subway and mosaic options.",
+      image: "/our_services/Tile/backsplash_tile.jpg",
+      alt: "A bold black and white herringbone backsplash adds character to a modern kitchen.",
+      price: "Price starts at  $1,200",
+    },
+    {
+      heading: "Ceramic Tile",
+      paragraph:
+        "Durable ceramic tiles are a great choice for kitchens and bathrooms, combining style and practicality.",
+      image: "/our_services/Tile/ceramic_tile.jpg",
+      alt: "A selection of ceramic tiles showcasing their unique textures and colors.",
+      price: "Price starts at  $1,200",
+    },
+    {
+      heading: "Porcelain Tile",
+      paragraph:
+        "Add elegance to your home with porcelain tiles that are as durable as they are beautiful.",
+      image: "/our_services/Tile/porcelain_tile.jpg",
+      alt: "Close-up of porcelain tiles with intricate patterns and shades.",
+      price: "Price starts at  $2,000",
+    },
+    {
+      heading: "Mosaic Tile",
+      paragraph:
+        "Mosaic tiles bring a touch of creativity and style to any room, from backsplashes to floors.",
+      image: "/our_services/Tile/mosaic_tile.jpg",
+      alt: "A vibrant mosaic backsplash brings life to a modern kitchen counter.",
+      price: "Price starts at  $1,800",
+    },
+    {
+      heading: "Heated Tile Floor",
+      paragraph:
+        "Stay warm with heated tile floors, a perfect upgrade for Canadian winters.",
+      image: "/our_services/Tile/heated_tile_floor.jpg",
+      alt: "Schluter Ditra tile floor heating system being installed.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Basement Floor Tile",
+      paragraph:
+        "Upgrade your basement with durable and stylish tiles for a polished, lasting finish.",
+      image: "/our_services/Tile/basement_floor_tile.jpg",
+      alt: "A basement floor with classic black and white tiles leading to an adjacent space.",
+      price: "Price starts at  $2,200",
+    },
+    {
+      heading: "Subway Tile",
+      paragraph:
+        "Classic subway tiles are perfect for kitchens and bathrooms, available in a variety of colors and sizes.",
+      image: "/our_services/Tile/subway_tile.jpg",
+      alt: "A modern shower with white subway tiles and sleek fixtures.",
+      price: "Price starts at  $1,200",
+    },
+    {
+      heading: "Grout Cleaning",
+      paragraph:
+        "Keep your tiles looking fresh with professional grout cleaning that restores their original shine.",
+      image: "/our_services/Tile/grout_cleaning.jpg",
+      alt: "A steam cleaner restoring grout to its original color.",
+      price: "Price starts at  $500",
+    },
+    {
+      heading: "Fireplace Tile",
+      paragraph:
+        "Transform your fireplace with stylish tiles and expert installation for a warm, inviting space.",
+      image: "/our_services/Tile/fireplace_tile.jpg",
+      alt: "A fireplace with elegant tiles and a cozy couch nearby.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Outdoor Tile",
+      paragraph:
+        "Explore durable and stylish outdoor tiles for your patio or walkway, made to withstand the elements.",
+      image: "/our_services/Tile/outdoor_tile.jpg",
+      alt: "A modern outdoor dining area with sleek patio tiles and comfortable seating.",
+      price: "Price starts at  $2,500",
+    },
+  ],
+  countertops: [
+    {
+      heading: "Countertop Installation",
+      paragraph:
+        "Choose from our wide selection of quartz, marble, and granite countertops. Book your installation today for a seamless experience.",
+      image: "/our_services/Countertops/countertop_installation.jpg",
+      alt: "A modern kitchen with wooden stools and a sleek white quartz countertop.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Quartz Countertops",
+      paragraph:
+        "Discover the beauty and versatility of quartz countertops, available in a variety of colors to suit any kitchen style.",
+      image: "/our_services/Countertops/quartz_countertops.jpg",
+      alt: "Close-up of a quartz countertop with a white marble-like surface.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Granite Countertops",
+      paragraph:
+        "Add natural beauty and durability to your kitchen with our expertly installed granite countertops.",
+      image: "/our_services/Countertops/granite_countertops.jpg",
+      alt: "A granite countertop with black and white speckles in a modern kitchen.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Laminate Countertops",
+      paragraph:
+        "Laminate countertops offer a budget-friendly option with plenty of colors and styles to match your kitchen.",
+      image: "/our_services/Countertops/laminate_countertops.jpg",
+      alt: "A clean, modern kitchen with sleek laminate countertops and white cabinetry.",
+      price: "Price starts at  $1,200",
+    },
+    {
+      heading: "Soapstone Countertops",
+      paragraph:
+        "Soapstone countertops bring a unique, natural look to your kitchen. Let us help you select and install the perfect slab.",
+      image: "/our_services/Countertops/soapstone_countertops.jpg",
+      alt: "A soapstone countertop with a bowl of colorful fruit displayed on top.",
+      price: "Price starts at  $2,800",
+    },
+    {
+      heading: "Butcher Block",
+      paragraph:
+        "Timeless and versatile, butcher block countertops offer warmth and functionality to your kitchen space.",
+      image: "/our_services/Countertops/butcher_block.jpg",
+      alt: "A butcher block countertop with a stove and oven integrated into the workspace.",
+      price: "Price starts at  $2,000",
+    },
+    {
+      heading: "Concrete Countertop",
+      paragraph:
+        "Achieve a modern, industrial vibe with durable concrete countertops, custom-installed for your kitchen.",
+      image: "/our_services/Countertops/concrete_countertop.jpg",
+      alt: "A concrete countertop with a built-in sink and a functional workspace.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Stainless Steel Countertops",
+      paragraph:
+        "Stainless steel countertops are a hygienic and stylish option, ideal for both residential and professional kitchens.",
+      image: "/our_services/Countertops/stainless-steel_countertops.jpg",
+      alt: "A sleek stainless steel countertop in a minimalist kitchen.",
+      price: "Price starts at  $3,200",
+    },
+    {
+      heading: "Porcelain Countertop",
+      paragraph:
+        "Porcelain countertops offer a sleek, seamless look and are resistant to scratches, stains, and heat.",
+      image: "/our_services/Countertops/porcelain_countertop.jpg",
+      alt: "A durable porcelain countertop with a smooth and polished finish.",
+      price: "Price starts at  $3,500",
+    },
+    {
+      heading: "Countertop Repair",
+      paragraph:
+        "Save money with our countertop repair services, perfect for fixing cracks and scratches without replacing the whole surface.",
+      image: "/our_services/Countertops/countertop_repair.jpg",
+      alt: "A craftsman measuring a countertop for precise repair work.",
+      price: "Price starts at  $800",
+    },
+  ],
+  cabinets: [
+    {
+      heading: "Kitchen Cabinet Installation",
+      paragraph:
+        "Let us handle your kitchen cabinet installation with care and precision. Choose the perfect set from our wide selection.",
+      image: "/our_services/Cabinets/cabinet_installation.jpg",
+      alt: "A man wearing gloves works on installing a cabinet, showcasing skill and attention to detail.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Kitchen Cabinets",
+      paragraph:
+        "Browse our selection of melamine, MDF, hardwood, and plywood cabinets. Special discounts available on select styles.",
+      image: "/our_services/Cabinets/kitchen_cabinets.jpg",
+      alt: "A modern kitchen with dark green cabinets and white countertops, creating a sleek and inviting space.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Cabinet Design",
+      paragraph:
+        "Visualize your dream cabinets with our complimentary design services for kitchens and bathrooms.",
+      image: "/our_services/Cabinets/cabinet_design.jpg",
+      alt: "A stylish kitchen featuring clean white cabinets and a warm wooden floor, designed to perfection.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "Bathroom Vanity",
+      paragraph:
+        "Upgrade your bathroom with a new vanity. We offer a range of stylish and functional cabinets for all your needs.",
+      image: "/our_services/Cabinets/bathroom_cabinets.jpg",
+      alt: "A blue vanity with marble countertops and a white sink, adding charm to a modern bathroom.",
+      price: "Price starts at  $2,200",
+    },
+    {
+      heading: "Cabinet Refinishing",
+      paragraph:
+        "Refresh your cabinets with our refinishing service. Save time and money while achieving professional results.",
+      image: "/our_services/Cabinets/cabinet_refinishing.jpg",
+      alt: "A person carefully cutting wood in a workshop, preparing for cabinet refinishing.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "Built-in Cabinets",
+      paragraph:
+        "Built-in cabinets add a seamless look to any room, offering style and storage in one solution.",
+      image: "/our_services/Cabinets/built-in-cabinets.jpg",
+      alt: "A modern kitchen with built-in cabinets, a spacious island, and a sliding door leading outside.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Cabinet Door Replacement",
+      paragraph:
+        "Replace old cabinet doors with new ones for a fresh look. Choose from a variety of affordable options.",
+      image: "/our_services/Cabinets/cabinet_door_replacement.jpg",
+      alt: "A kitchen with green cabinets and wooden floors, featuring newly replaced doors for a refreshed appearance.",
+      price: "Price starts at  $1,800",
+    },
+    {
+      heading: "Cabinet Repair",
+      paragraph:
+        "We repair kitchen cabinets and more, giving your storage spaces a new lease on life.",
+      image: "/our_services/Cabinets/cabinet_repair.jpg",
+      alt: "A man using a drill to fix a cabinet door, showcasing home improvement in action.",
+      price: "Price starts at  $800",
+    },
+    {
+      heading: "Cabinet Painting",
+      paragraph:
+        "Give your cabinets a new look with our professional painting service. We use high-quality paints for stunning results.",
+      image: "/our_services/Cabinets/cabinet_painting.jpg",
+      alt: "A vibrant blue paint roll placed on a white surface, ready for cabinet transformation.",
+      price: "Price starts at  $1,300",
+    },
+    {
+      heading: "Storage Cabinets",
+      paragraph:
+        "Enhance any room with additional storage space. We offer and install stylish, functional storage cabinets.",
+      image: "/our_services/Cabinets/storage_cabinets.jpg",
+      alt: "A white storage cabinet with a basket on top, adding a clean and organized touch.",
+      price: "Price starts at  $2,500",
+    },
+  ],
+  flooring: [
+    {
+      heading: "Flooring Installation",
+      paragraph:
+        "Upgrade your home with professional flooring installation. We offer a variety of flooring types, fixtures, and colors to suit your style.",
+      image: "/our_services/Flooring/Flooring_Installation.jpg",
+      alt: "A man carefully using a hammer to secure a piece of hardwood during a flooring project.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Hardwood Flooring",
+      paragraph:
+        "Enhance your home with high-quality hardwood flooring. Choose from a range of styles and finishes to complement your décor and add lasting value.",
+      image: "/our_services/Flooring/Hardwood_Flooring.jpg",
+      alt: "A cozy living room with hardwood floors and stylish furniture, creating a warm and inviting space.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Laminate Flooring",
+      paragraph:
+        "Laminate flooring combines durability and style at an affordable price. It’s easy to install and perfect for high-traffic areas.",
+      image: "/our_services/Flooring/Laminate_Flooring.jpg",
+      alt: "Close-up of a laminate floor showcasing its wood-like texture.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Carpet",
+      paragraph:
+        "Add comfort and warmth to your home with our carpet installation service. Choose from a variety of colors and textures to fit any room.",
+      image: "/our_services/Flooring/Carpet.jpg",
+      alt: "A cozy bedroom with a soft blue rug that complements the beige carpet floor.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "LVT Flooring",
+      paragraph:
+        "LVT flooring offers a stylish, cost-effective solution. It’s durable and moisture-resistant, making it perfect for busy or damp areas.",
+      image: "/our_services/Flooring/LVT_Flooring.jpg",
+      alt: "A modern room featuring wooden floors and shelves, showcasing LVT flooring in a sleek interior.",
+      price: "Price starts at  $3,000",
+    },
+  ],
 
-		},
-		{
-			"heading": "Basement Finishing",
-			"paragraph":
-				"Transform your basement into functional living space with our finishing services.",
-			"image": "/our_services/Basement/Basement_Finishing.jpg",
-			"alt": "Finished basement with stone columns, wood-like laminate flooring, and recessed ceiling lights.",
-			"price": "Price starts at $12,500 CAD",
-			"defaultLink": "basement-finishing-seattle",
-			"category": "basement"
-		},
-		{
-			"heading": "Attic Finishing",
-			"paragraph":
-				"Transform your attic into usable living space with our finishing services.",
-			"image": "/our_services/Attic/Attic_Finishing.jpg",
-			"alt": "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
-			"price": "Price starts at $12,500 CAD",
-			"defaultLink": "attic-finishing-seattle",
-			"category": "attic"
-		},{
-			"heading": "ADU and DADU building",
-			"paragraph":
-				"Transform your attic into usable living space with our finishing services.",
-			"image": "/our_services/Attic/Attic_Finishing.jpg",
-			"alt": "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
-			"price": "Price starts at $12,500 CAD",
-			"defaultLink": "adu-builder-seattle",
-			"category": "attic"
-		},{
-			"heading": "Basement Waterproofing",
-			"paragraph":
-				"Transform your attic into usable living space with our finishing services.",
-			"image": "/our_services/Attic/Attic_Finishing.jpg",
-			"alt": "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
-			"price": "Price starts at $12,500 CAD",
-			"defaultLink": "basement-waterproofing-seattle",
-			"category": "attic"
-		}
-	]
-	,
-	tile: [
-		{
-		  heading: "Tile Installation",
-		  paragraph: "Get professional tile installation for kitchens, bathrooms, and floors with a wide range of styles to choose from.",
-		  image: "/our_services/Tile/tile_installation.jpg",
-		  alt: "A man installing white tiles on a wall with careful precision and craftsmanship.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Floor Tile",
-		  paragraph: "Find the perfect floor tile for your home and let us handle the installation for a flawless finish.",
-		  image: "/our_services/Tile/floor_tile.jpg",
-		  alt: "A stylish white herringbone tile floor paired with a cozy fireplace.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Bathroom Tile",
-		  paragraph: "Upgrade your bathroom with beautiful tiles in various shapes and colors, installed at competitive rates.",
-		  image: "/our_services/Tile/bathroom_tile.jpg",
-		  alt: "A luxurious bathroom featuring a marble countertop and gold fixtures.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Shower Tile",
-		  paragraph: "Transform your shower with stunning tiles designed to suit your style and space.",
-		  image: "/our_services/Tile/shower_tile.jpg",
-		  alt: "A clean, modern shower with a glass door and a neatly folded towel.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Backsplash Tile",
-		  paragraph: "Give your kitchen a fresh look with our range of backsplash tiles, including subway and mosaic options.",
-		  image: "/our_services/Tile/backsplash_tile.jpg",
-		  alt: "A bold black and white herringbone backsplash adds character to a modern kitchen.",
-		  price: "Price starts at CAD $1,200",
-		},
-		{
-		  heading: "Ceramic Tile",
-		  paragraph: "Durable ceramic tiles are a great choice for kitchens and bathrooms, combining style and practicality.",
-		  image: "/our_services/Tile/ceramic_tile.jpg",
-		  alt: "A selection of ceramic tiles showcasing their unique textures and colors.",
-		  price: "Price starts at CAD $1,200",
-		},
-		{
-		  heading: "Porcelain Tile",
-		  paragraph: "Add elegance to your home with porcelain tiles that are as durable as they are beautiful.",
-		  image: "/our_services/Tile/porcelain_tile.jpg",
-		  alt: "Close-up of porcelain tiles with intricate patterns and shades.",
-		  price: "Price starts at CAD $2,000",
-		},
-		{
-		  heading: "Mosaic Tile",
-		  paragraph: "Mosaic tiles bring a touch of creativity and style to any room, from backsplashes to floors.",
-		  image: "/our_services/Tile/mosaic_tile.jpg",
-		  alt: "A vibrant mosaic backsplash brings life to a modern kitchen counter.",
-		  price: "Price starts at CAD $1,800",
-		},
-		{
-		  heading: "Heated Tile Floor",
-		  paragraph: "Stay warm with heated tile floors, a perfect upgrade for Canadian winters.",
-		  image: "/our_services/Tile/heated_tile_floor.jpg",
-		  alt: "Schluter Ditra tile floor heating system being installed.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Basement Floor Tile",
-		  paragraph: "Upgrade your basement with durable and stylish tiles for a polished, lasting finish.",
-		  image: "/our_services/Tile/basement_floor_tile.jpg",
-		  alt: "A basement floor with classic black and white tiles leading to an adjacent space.",
-		  price: "Price starts at CAD $2,200",
-		},
-		{
-		  heading: "Subway Tile",
-		  paragraph: "Classic subway tiles are perfect for kitchens and bathrooms, available in a variety of colors and sizes.",
-		  image: "/our_services/Tile/subway_tile.jpg",
-		  alt: "A modern shower with white subway tiles and sleek fixtures.",
-		  price: "Price starts at CAD $1,200",
-		},
-		{
-		  heading: "Grout Cleaning",
-		  paragraph: "Keep your tiles looking fresh with professional grout cleaning that restores their original shine.",
-		  image: "/our_services/Tile/grout_cleaning.jpg",
-		  alt: "A steam cleaner restoring grout to its original color.",
-		  price: "Price starts at CAD $500",
-		},
-		{
-		  heading: "Fireplace Tile",
-		  paragraph: "Transform your fireplace with stylish tiles and expert installation for a warm, inviting space.",
-		  image: "/our_services/Tile/fireplace_tile.jpg",
-		  alt: "A fireplace with elegant tiles and a cozy couch nearby.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Outdoor Tile",
-		  paragraph: "Explore durable and stylish outdoor tiles for your patio or walkway, made to withstand the elements.",
-		  image: "/our_services/Tile/outdoor_tile.jpg",
-		  alt: "A modern outdoor dining area with sleek patio tiles and comfortable seating.",
-		  price: "Price starts at CAD $2,500",
-		},
-	  ],
-	  countertops: [
-		{
-		  heading: "Countertop Installation",
-		  paragraph: "Choose from our wide selection of quartz, marble, and granite countertops. Book your installation today for a seamless experience.",
-		  image: "/our_services/Countertops/countertop_installation.jpg",
-		  alt: "A modern kitchen with wooden stools and a sleek white quartz countertop.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Quartz Countertops",
-		  paragraph: "Discover the beauty and versatility of quartz countertops, available in a variety of colors to suit any kitchen style.",
-		  image: "/our_services/Countertops/quartz_countertops.jpg",
-		  alt: "Close-up of a quartz countertop with a white marble-like surface.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Granite Countertops",
-		  paragraph: "Add natural beauty and durability to your kitchen with our expertly installed granite countertops.",
-		  image: "/our_services/Countertops/granite_countertops.jpg",
-		  alt: "A granite countertop with black and white speckles in a modern kitchen.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Laminate Countertops",
-		  paragraph: "Laminate countertops offer a budget-friendly option with plenty of colors and styles to match your kitchen.",
-		  image: "/our_services/Countertops/laminate_countertops.jpg",
-		  alt: "A clean, modern kitchen with sleek laminate countertops and white cabinetry.",
-		  price: "Price starts at CAD $1,200",
-		},
-		{
-		  heading: "Soapstone Countertops",
-		  paragraph: "Soapstone countertops bring a unique, natural look to your kitchen. Let us help you select and install the perfect slab.",
-		  image: "/our_services/Countertops/soapstone_countertops.jpg",
-		  alt: "A soapstone countertop with a bowl of colorful fruit displayed on top.",
-		  price: "Price starts at CAD $2,800",
-		},
-		{
-		  heading: "Butcher Block",
-		  paragraph: "Timeless and versatile, butcher block countertops offer warmth and functionality to your kitchen space.",
-		  image: "/our_services/Countertops/butcher_block.jpg",
-		  alt: "A butcher block countertop with a stove and oven integrated into the workspace.",
-		  price: "Price starts at CAD $2,000",
-		},
-		{
-		  heading: "Concrete Countertop",
-		  paragraph: "Achieve a modern, industrial vibe with durable concrete countertops, custom-installed for your kitchen.",
-		  image: "/our_services/Countertops/concrete_countertop.jpg",
-		  alt: "A concrete countertop with a built-in sink and a functional workspace.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Stainless Steel Countertops",
-		  paragraph: "Stainless steel countertops are a hygienic and stylish option, ideal for both residential and professional kitchens.",
-		  image: "/our_services/Countertops/stainless-steel_countertops.jpg",
-		  alt: "A sleek stainless steel countertop in a minimalist kitchen.",
-		  price: "Price starts at CAD $3,200",
-		},
-		{
-		  heading: "Porcelain Countertop",
-		  paragraph: "Porcelain countertops offer a sleek, seamless look and are resistant to scratches, stains, and heat.",
-		  image: "/our_services/Countertops/porcelain_countertop.jpg",
-		  alt: "A durable porcelain countertop with a smooth and polished finish.",
-		  price: "Price starts at CAD $3,500",
-		},
-		{
-		  heading: "Countertop Repair",
-		  paragraph: "Save money with our countertop repair services, perfect for fixing cracks and scratches without replacing the whole surface.",
-		  image: "/our_services/Countertops/countertop_repair.jpg",
-		  alt: "A craftsman measuring a countertop for precise repair work.",
-		  price: "Price starts at CAD $800",
-		},
-	  ],
-	  cabinets: [
-		{
-		  heading: "Kitchen Cabinet Installation",
-		  paragraph: "Let us handle your kitchen cabinet installation with care and precision. Choose the perfect set from our wide selection.",
-		  image: "/our_services/Cabinets/cabinet_installation.jpg",
-		  alt: "A man wearing gloves works on installing a cabinet, showcasing skill and attention to detail.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Kitchen Cabinets",
-		  paragraph: "Browse our selection of melamine, MDF, hardwood, and plywood cabinets. Special discounts available on select styles.",
-		  image: "/our_services/Cabinets/kitchen_cabinets.jpg",
-		  alt: "A modern kitchen with dark green cabinets and white countertops, creating a sleek and inviting space.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Cabinet Design",
-		  paragraph: "Visualize your dream cabinets with our complimentary design services for kitchens and bathrooms.",
-		  image: "/our_services/Cabinets/cabinet_design.jpg",
-		  alt: "A stylish kitchen featuring clean white cabinets and a warm wooden floor, designed to perfection.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "Bathroom Vanity",
-		  paragraph: "Upgrade your bathroom with a new vanity. We offer a range of stylish and functional cabinets for all your needs.",
-		  image: "/our_services/Cabinets/bathroom_cabinets.jpg",
-		  alt: "A blue vanity with marble countertops and a white sink, adding charm to a modern bathroom.",
-		  price: "Price starts at CAD $2,200",
-		},
-		{
-		  heading: "Cabinet Refinishing",
-		  paragraph: "Refresh your cabinets with our refinishing service. Save time and money while achieving professional results.",
-		  image: "/our_services/Cabinets/cabinet_refinishing.jpg",
-		  alt: "A person carefully cutting wood in a workshop, preparing for cabinet refinishing.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "Built-in Cabinets",
-		  paragraph: "Built-in cabinets add a seamless look to any room, offering style and storage in one solution.",
-		  image: "/our_services/Cabinets/built-in-cabinets.jpg",
-		  alt: "A modern kitchen with built-in cabinets, a spacious island, and a sliding door leading outside.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Cabinet Door Replacement",
-		  paragraph: "Replace old cabinet doors with new ones for a fresh look. Choose from a variety of affordable options.",
-		  image: "/our_services/Cabinets/cabinet_door_replacement.jpg",
-		  alt: "A kitchen with green cabinets and wooden floors, featuring newly replaced doors for a refreshed appearance.",
-		  price: "Price starts at CAD $1,800",
-		},
-		{
-		  heading: "Cabinet Repair",
-		  paragraph: "We repair kitchen cabinets and more, giving your storage spaces a new lease on life.",
-		  image: "/our_services/Cabinets/cabinet_repair.jpg",
-		  alt: "A man using a drill to fix a cabinet door, showcasing home improvement in action.",
-		  price: "Price starts at CAD $800",
-		},
-		{
-		  heading: "Cabinet Painting",
-		  paragraph: "Give your cabinets a new look with our professional painting service. We use high-quality paints for stunning results.",
-		  image: "/our_services/Cabinets/cabinet_painting.jpg",
-		  alt: "A vibrant blue paint roll placed on a white surface, ready for cabinet transformation.",
-		  price: "Price starts at CAD $1,300",
-		},
-		{
-		  heading: "Storage Cabinets",
-		  paragraph: "Enhance any room with additional storage space. We offer and install stylish, functional storage cabinets.",
-		  image: "/our_services/Cabinets/storage_cabinets.jpg",
-		  alt: "A white storage cabinet with a basket on top, adding a clean and organized touch.",
-		  price: "Price starts at CAD $2,500",
-		},
-	  ],
-	  flooring: [
-		{
-		  heading: "Flooring Installation",
-		  paragraph:
-			"Upgrade your home with professional flooring installation. We offer a variety of flooring types, fixtures, and colors to suit your style.",
-		  image: "/our_services/Flooring/Flooring_Installation.jpg",
-		  alt: "A man carefully using a hammer to secure a piece of hardwood during a flooring project.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Hardwood Flooring",
-		  paragraph:
-			"Enhance your home with high-quality hardwood flooring. Choose from a range of styles and finishes to complement your décor and add lasting value.",
-		  image: "/our_services/Flooring/Hardwood_Flooring.jpg",
-		  alt: "A cozy living room with hardwood floors and stylish furniture, creating a warm and inviting space.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Laminate Flooring",
-		  paragraph:
-			"Laminate flooring combines durability and style at an affordable price. It’s easy to install and perfect for high-traffic areas.",
-		  image: "/our_services/Flooring/Laminate_Flooring.jpg",
-		  alt: "Close-up of a laminate floor showcasing its wood-like texture.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Carpet",
-		  paragraph:
-			"Add comfort and warmth to your home with our carpet installation service. Choose from a variety of colors and textures to fit any room.",
-		  image: "/our_services/Flooring/Carpet.jpg",
-		  alt: "A cozy bedroom with a soft blue rug that complements the beige carpet floor.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "LVT Flooring",
-		  paragraph:
-			"LVT flooring offers a stylish, cost-effective solution. It’s durable and moisture-resistant, making it perfect for busy or damp areas.",
-		  image: "/our_services/Flooring/LVT_Flooring.jpg",
-		  alt: "A modern room featuring wooden floors and shelves, showcasing LVT flooring in a sleek interior.",
-		  price: "Price starts at CAD $3,000",
-		},
-	  ],
+  deck: [
+    {
+      heading: "Deck Building",
+      paragraph:
+        "Let us help you create a stunning outdoor area with our deck-building services. We design and build decks that are perfect for relaxation and entertaining.",
+      image: "/our_services/Decking/Deck_Building.jpg",
+      alt: "Various tools laid out alongside a bright yellow object, set on a backdrop of deck building materials.",
+      price: "Price starts at  $7,000",
+    },
+    {
+      heading: "Backyard Deck Installation",
+      paragraph:
+        "Enhance your backyard with our year-round deck installation services. We take care of permits, plans, and provide a reliable warranty.",
+      image: "/our_services/Decking/Backyard_Deck_Installation.jpg",
+      alt: "A wooden deck in a backyard with a table and chairs, inviting for gatherings and relaxation.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Trex Deck",
+      paragraph:
+        "Explore Trex decking with our installation services. It's eco-friendly, durable, and low-maintenance, available in a range of colors.",
+      image: "/our_services/Decking/Trex_Deck.jpg",
+      alt: "A Trex deck featuring a table and chairs under a large umbrella, perfect for outdoor dining and lounging.",
+      price: "Price starts at  $7,000",
+    },
+    {
+      heading: "Composite Deck",
+      paragraph:
+        "Upgrade your outdoor space with a durable, low-maintenance composite deck. We offer free consultations and install year-round.",
+      image: "/our_services/Decking/Composite_Deck.jpg",
+      alt: "A wicker chair on a composite wooden deck, blending natural and modern design elements.",
+      price: "Price starts at  $6,500",
+    },
+    {
+      heading: "Custom Deck",
+      paragraph:
+        "We specialize in custom deck installations, offering free renderings and expert architectural designs tailored to your needs.",
+      image: "/our_services/Decking/Custom_Deck.jpg",
+      alt: "A custom deck attached to a large green house, surrounded by lush greenery.",
+      price: "Price starts at  $8,000",
+    },
+    {
+      heading: "Pool Deck Construction",
+      paragraph:
+        "Transform your pool area with a professionally built deck. Our services include safety features, expert consultations, and a solid warranty.",
+      image: "/our_services/Decking/Pool_Deck_Construction.jpg",
+      alt: "A wooden pool deck surrounding a clear blue pool.",
+      price: "Price starts at  $10,000",
+    },
+    {
+      heading: "Deck Repair",
+      paragraph:
+        "Fix your deck with our reliable repair services. Whether it’s a pool deck or a rooftop deck, we offer fast, flexible solutions backed by a warranty.",
+      image: "/our_services/Decking/Deck_Repair.jpg",
+      alt: "A hammer placed on a wooden deck, illustrating the process of deck repair.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Deck Restoration",
+      paragraph:
+        "Bring your deck back to life with our restoration services. We focus on every detail and offer free consultations to ensure a flawless finish.",
+      image: "/our_services/Decking/Deck_Restoration.jpg",
+      alt: "A man measuring wood with a tape measure, preparing for deck restoration.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Deck Railing Installation",
+      paragraph:
+        "Enhance your deck with stylish and safe railings. We offer a variety of options, including cable railings, to suit your needs.",
+      image: "/our_services/Decking/Deck_Railing_Installation.jpg",
+      alt: "A charming wooden deck with a railing, adding safety and visual appeal.",
+      price: "Price starts at  $1,800",
+    },
+    {
+      heading: "Deck Replacement",
+      paragraph:
+        "Upgrade your old deck with our deck replacement service. Our designers will help create a stylish, modern replacement that lasts.",
+      image: "/our_services/Decking/Deck_Replacement.jpg",
+      alt: "A man using a drill to install a wooden deck as part of a replacement project.",
+      price: "Price starts at  $7,000",
+    },
+    {
+      heading: "Timber Decking",
+      paragraph:
+        "Give your backyard a timeless, natural look with custom timber decking. Our installations are backed by a comprehensive warranty.",
+      image: "/our_services/Decking/Timber_Decking.jpg",
+      alt: "A wooden deck made of timber, featuring a white roof and a blue house in the background.",
+      price: "Price starts at  $5,500",
+    },
+  ],
 
-	  deck: [
-		{
-		  heading: "Deck Building",
-		  paragraph:
-			"Let us help you create a stunning outdoor area with our deck-building services. We design and build decks that are perfect for relaxation and entertaining.",
-		  image: "/our_services/Decking/Deck_Building.jpg",
-		  alt: "Various tools laid out alongside a bright yellow object, set on a backdrop of deck building materials.",
-		  price: "Price starts at CAD $7,000",
-		},
-		{
-		  heading: "Backyard Deck Installation",
-		  paragraph:
-			"Enhance your backyard with our year-round deck installation services. We take care of permits, plans, and provide a reliable warranty.",
-		  image: "/our_services/Decking/Backyard_Deck_Installation.jpg",
-		  alt: "A wooden deck in a backyard with a table and chairs, inviting for gatherings and relaxation.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Trex Deck",
-		  paragraph:
-			"Explore Trex decking with our installation services. It's eco-friendly, durable, and low-maintenance, available in a range of colors.",
-		  image: "/our_services/Decking/Trex_Deck.jpg",
-		  alt: "A Trex deck featuring a table and chairs under a large umbrella, perfect for outdoor dining and lounging.",
-		  price: "Price starts at CAD $7,000",
-		},
-		{
-		  heading: "Composite Deck",
-		  paragraph:
-			"Upgrade your outdoor space with a durable, low-maintenance composite deck. We offer free consultations and install year-round.",
-		  image: "/our_services/Decking/Composite_Deck.jpg",
-		  alt: "A wicker chair on a composite wooden deck, blending natural and modern design elements.",
-		  price: "Price starts at CAD $6,500",
-		},
-		{
-		  heading: "Custom Deck",
-		  paragraph:
-			"We specialize in custom deck installations, offering free renderings and expert architectural designs tailored to your needs.",
-		  image: "/our_services/Decking/Custom_Deck.jpg",
-		  alt: "A custom deck attached to a large green house, surrounded by lush greenery.",
-		  price: "Price starts at CAD $8,000",
-		},
-		{
-		  heading: "Pool Deck Construction",
-		  paragraph:
-			"Transform your pool area with a professionally built deck. Our services include safety features, expert consultations, and a solid warranty.",
-		  image: "/our_services/Decking/Pool_Deck_Construction.jpg",
-		  alt: "A wooden pool deck surrounding a clear blue pool.",
-		  price: "Price starts at CAD $10,000",
-		},
-		{
-		  heading: "Deck Repair",
-		  paragraph:
-			"Fix your deck with our reliable repair services. Whether it’s a pool deck or a rooftop deck, we offer fast, flexible solutions backed by a warranty.",
-		  image: "/our_services/Decking/Deck_Repair.jpg",
-		  alt: "A hammer placed on a wooden deck, illustrating the process of deck repair.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Deck Restoration",
-		  paragraph:
-			"Bring your deck back to life with our restoration services. We focus on every detail and offer free consultations to ensure a flawless finish.",
-		  image: "/our_services/Decking/Deck_Restoration.jpg",
-		  alt: "A man measuring wood with a tape measure, preparing for deck restoration.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Deck Railing Installation",
-		  paragraph:
-			"Enhance your deck with stylish and safe railings. We offer a variety of options, including cable railings, to suit your needs.",
-		  image: "/our_services/Decking/Deck_Railing_Installation.jpg",
-		  alt: "A charming wooden deck with a railing, adding safety and visual appeal.",
-		  price: "Price starts at CAD $1,800",
-		},
-		{
-		  heading: "Deck Replacement",
-		  paragraph:
-			"Upgrade your old deck with our deck replacement service. Our designers will help create a stylish, modern replacement that lasts.",
-		  image: "/our_services/Decking/Deck_Replacement.jpg",
-		  alt: "A man using a drill to install a wooden deck as part of a replacement project.",
-		  price: "Price starts at CAD $7,000",
-		},
-		{
-		  heading: "Timber Decking",
-		  paragraph:
-			"Give your backyard a timeless, natural look with custom timber decking. Our installations are backed by a comprehensive warranty.",
-		  image: "/our_services/Decking/Timber_Decking.jpg",
-		  alt: "A wooden deck made of timber, featuring a white roof and a blue house in the background.",
-		  price: "Price starts at CAD $5,500",
-		},
-	  ],
+  kitchen: [
+    {
+      heading: "Kitchen Remodel",
+      paragraph:
+        "Bring your dream kitchen to life with our remodeling services. From design to material delivery, we handle it all to create your perfect space.",
+      image: "/our_services/Kitchen/Kitchen_Remodel.jpg",
+      alt: "Open-concept kitchen and living area with white cabinets, marble-patterned countertops, and light wood flooring.",
+      price: "Price starts at  $10,000",
+    },
+    {
+      heading: "Kitchen Design",
+      paragraph:
+        "Work with our designer to create a kitchen that fits your style and needs. We'll guide you through every step with personalized consultations.",
+      image: "/our_services/Kitchen/Kitchen_Design.jpg",
+      alt: "A modern kitchen with white cabinetry, a large marble countertop island, and stainless steel appliances, including a range with a matching hood.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Kitchen Tile",
+      paragraph:
+        "Upgrade your kitchen with stunning tile installations that enhance both functionality and aesthetics in your cooking space.",
+      image: "/our_services/Kitchen/Kitchen_Tile.jpg",
+      alt: "Two red apples on a white plate on a light wooden countertop with a white tiled backsplash in the background.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Kitchen Layout",
+      paragraph:
+        "Optimize your kitchen's functionality and comfort with our professional layout planning services tailored to your space.",
+      image: "/our_services/Kitchen/Kitchen_Layout.jpg",
+      alt: "Close-up of a technical drawing of a kitchen layout.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Kitchen Cabinets",
+      paragraph:
+        "Upgrade your storage with custom or prefabricated kitchen cabinets. We ensure quick installation so you can enjoy your new kitchen in no time.",
+      image: "/our_services/Kitchen/Kitchen_Cabinets.jpg",
+      alt: "Forest green kitchen with cabinetry, white marble countertops, an island, and a white tile backsplash.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Kitchen Countertops",
+      paragraph:
+        "Choose from a variety of countertop styles and materials. We offer professional installation to elevate your kitchen's look and feel.",
+      image: "/our_services/Kitchen/Kitchen_Countertops.jpg",
+      alt: "Modern kitchen with white and gray countertops, woven basket, stovetop, cutting boards, white bowls, and a built-in black oven.",
+      price: "Price starts at  $3,500",
+    },
+    {
+      heading: "Kitchen Flooring",
+      paragraph:
+        "Upgrade your kitchen floors with durable and stylish options. Whether you prefer tile or hardwood, we’ve got you covered.",
+      image: "/our_services/Kitchen/Kitchen_Flooring.jpg",
+      alt: "Modern chevron-patterned light tile kitchen floor leading to a dark reflective built-in unit framed with warm wood.",
+      price: "Price starts at  $2,000",
+    },
+    {
+      heading: "Kitchen Appliances",
+      paragraph:
+        "Get your new appliances installed quickly and efficiently. We also handle delivery and old appliance disposal for a hassle-free experience.",
+      image: "/our_services/Kitchen/Kitchen_Appliances.jpg",
+      alt: "Modern kitchen with a SMEG built-in oven and stand mixer on a grey countertop.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "Kitchen Lighting",
+      paragraph:
+        "Add style and functionality to your kitchen with our lighting solutions. Proper lighting makes your countertops and space stand out.",
+      image: "/our_services/Kitchen/Kitchen_Lighting.jpg",
+      alt: "Hanging wooden pendant light in a kitchen with wooden cabinets, tiled backsplash, and various kitchen items including a plant and mugs on a shelf.",
+      price: "Price starts at  $2,000",
+    },
+    {
+      heading: "Patio Kitchen",
+      paragraph:
+        "Create the perfect outdoor kitchen with our patio installation services. Turn your backyard into a chef's paradise.",
+      image: "/our_services/Kitchen/Patio_Kitchen.jpg",
+      alt: "Outdoor patio kitchen with built-in grill, stainless steel drawers, a countertop with white dishes, gray dining table, and black lattice-back chairs.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Kitchen Plumbing",
+      paragraph:
+        "Ensure your kitchen's plumbing is installed correctly and functions seamlessly. Our team will safely connect all your appliances.",
+      image: "/our_services/Kitchen/Kitchen_Plumbing.jpg",
+      alt: "Close-up of a kitchen sink with a gold faucet and matching drain.",
+      price: "Price starts at  $1,800",
+    },
+  ],
 
-	  kitchen: [
-		{
-		  heading: "Kitchen Remodel",
-		  paragraph:
-			"Bring your dream kitchen to life with our remodeling services. From design to material delivery, we handle it all to create your perfect space.",
-		  image: "/our_services/Kitchen/Kitchen_Remodel.jpg",
-		  alt: "Open-concept kitchen and living area with white cabinets, marble-patterned countertops, and light wood flooring.",
-		  price: "Price starts at CAD $10,000",
-		},
-		{
-		  heading: "Kitchen Design",
-		  paragraph:
-			"Work with our designer to create a kitchen that fits your style and needs. We'll guide you through every step with personalized consultations.",
-		  image: "/our_services/Kitchen/Kitchen_Design.jpg",
-		  alt: "A modern kitchen with white cabinetry, a large marble countertop island, and stainless steel appliances, including a range with a matching hood.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Kitchen Tile",
-		  paragraph:
-			"Upgrade your kitchen with stunning tile installations that enhance both functionality and aesthetics in your cooking space.",
-		  image: "/our_services/Kitchen/Kitchen_Tile.jpg",
-		  alt: "Two red apples on a white plate on a light wooden countertop with a white tiled backsplash in the background.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Kitchen Layout",
-		  paragraph:
-			"Optimize your kitchen's functionality and comfort with our professional layout planning services tailored to your space.",
-		  image: "/our_services/Kitchen/Kitchen_Layout.jpg",
-		  alt: "Close-up of a technical drawing of a kitchen layout.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Kitchen Cabinets",
-		  paragraph:
-			"Upgrade your storage with custom or prefabricated kitchen cabinets. We ensure quick installation so you can enjoy your new kitchen in no time.",
-		  image: "/our_services/Kitchen/Kitchen_Cabinets.jpg",
-		  alt: "Forest green kitchen with cabinetry, white marble countertops, an island, and a white tile backsplash.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Kitchen Countertops",
-		  paragraph:
-			"Choose from a variety of countertop styles and materials. We offer professional installation to elevate your kitchen's look and feel.",
-		  image: "/our_services/Kitchen/Kitchen_Countertops.jpg",
-		  alt: "Modern kitchen with white and gray countertops, woven basket, stovetop, cutting boards, white bowls, and a built-in black oven.",
-		  price: "Price starts at CAD $3,500",
-		},
-		{
-		  heading: "Kitchen Flooring",
-		  paragraph:
-			"Upgrade your kitchen floors with durable and stylish options. Whether you prefer tile or hardwood, we’ve got you covered.",
-		  image: "/our_services/Kitchen/Kitchen_Flooring.jpg",
-		  alt: "Modern chevron-patterned light tile kitchen floor leading to a dark reflective built-in unit framed with warm wood.",
-		  price: "Price starts at CAD $2,000",
-		},
-		{
-		  heading: "Kitchen Appliances",
-		  paragraph:
-			"Get your new appliances installed quickly and efficiently. We also handle delivery and old appliance disposal for a hassle-free experience.",
-		  image: "/our_services/Kitchen/Kitchen_Appliances.jpg",
-		  alt: "Modern kitchen with a SMEG built-in oven and stand mixer on a grey countertop.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "Kitchen Lighting",
-		  paragraph:
-			"Add style and functionality to your kitchen with our lighting solutions. Proper lighting makes your countertops and space stand out.",
-		  image: "/our_services/Kitchen/Kitchen_Lighting.jpg",
-		  alt: "Hanging wooden pendant light in a kitchen with wooden cabinets, tiled backsplash, and various kitchen items including a plant and mugs on a shelf.",
-		  price: "Price starts at CAD $2,000",
-		},
-		{
-		  heading: "Patio Kitchen",
-		  paragraph:
-			"Create the perfect outdoor kitchen with our patio installation services. Turn your backyard into a chef's paradise.",
-		  image: "/our_services/Kitchen/Patio_Kitchen.jpg",
-		  alt: "Outdoor patio kitchen with built-in grill, stainless steel drawers, a countertop with white dishes, gray dining table, and black lattice-back chairs.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Kitchen Plumbing",
-		  paragraph:
-			"Ensure your kitchen's plumbing is installed correctly and functions seamlessly. Our team will safely connect all your appliances.",
-		  image: "/our_services/Kitchen/Kitchen_Plumbing.jpg",
-		  alt: "Close-up of a kitchen sink with a gold faucet and matching drain.",
-		  price: "Price starts at CAD $1,800",
-		},
-	  ],
+  bathroom: [
+    {
+      heading: "Bathroom Remodel",
+      paragraph:
+        "Redesign your bathroom with our expert remodeling services. Whether it’s a layout change or a full addition, we ensure top-notch results.",
+      image: "/our_services/Bathroom/Bathroom_Remodel.jpg",
+      alt: "Modern bathroom with a black and white bathtub, glass shower, and white vanity with a cushioned chair.",
+      price: "Price starts at  $8,000",
+    },
+    {
+      heading: "Bathroom Layout",
+      paragraph:
+        "Maximize your bathroom space with a layout redesign. Small changes can add significant functionality and square footage.",
+      image: "/our_services/Bathroom/Bathroom_Layout.jpg",
+      alt: "Close-up of a pink pencil on a technical drawing with a white ruler in the corner.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Bathroom Design",
+      paragraph:
+        "Work with our designers to create a stylish and functional bathroom tailored to your needs and preferences.",
+      image: "/our_services/Bathroom/Bathroom_Design.jpg",
+      alt: "Modern bathroom with white marble surfaces and gold-toned fixtures.",
+      price: "Price starts at  $0",
+    },
+    {
+      heading: "Bathroom Cabinetry",
+      paragraph:
+        "Install durable and stylish cabinets designed for humid environments, perfect for maximizing your bathroom's storage.",
+      image: "/our_services/Bathroom/Bathroom_Cabinetry.jpg",
+      alt: "Modern bathroom with a scenic view, light green walls, white cabinetry, and decorative items on a gray granite countertop.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Heated Bathroom Floor",
+      paragraph:
+        "Enjoy the luxury of heated floors installed by licensed electricians, adding comfort to your bathroom all year round.",
+      image: "/our_services/Bathroom/Heated_Bathroom_Floor.jpg",
+      alt: "Modern bathroom with black tiled heated floor, a light wood floating vanity, white rectangular sink, and a large window with a perforated metal screen.",
+      price: "Price starts at  $3,500",
+    },
+    {
+      heading: "Bathroom Expansion",
+      paragraph:
+        "Expand your bathroom to include modern amenities like a walk-in shower, tub, or a combination of both for ultimate comfort.",
+      image: "/our_services/Bathroom/Bathroom_Expansion.jpg",
+      alt: "Modern grayscale bathroom with bathtub, window, rain shower head, toilet, floating vanity with sink, large mirror, and tropical plant.",
+      price: "Price starts at  $7,000",
+    },
+    {
+      heading: "Bathroom Shower",
+      paragraph:
+        "Upgrade with a custom or prefabricated shower installation. Transform your bathroom with a new, stylish shower space.",
+      image: "/our_services/Bathroom/Bathroom_Shower.jpg",
+      alt: "Modern shower with white brick-pattern tiles and a dark grey shower fixture.",
+      price: "Price starts at  $3,500",
+    },
+    {
+      heading: "Bathroom Fixtures",
+      paragraph:
+        "Order and install new fixtures with ease. We provide quick, hassle-free installation and free delivery for all purchases.",
+      image: "/our_services/Bathroom/Bathroom_Fixtures.jpg",
+      alt: "Modern bathroom sink with gray stone countertop, white vessel sink, black faucet, and vase with green leaves.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "Bathroom Plumbing",
+      paragraph:
+        "Keep your bathroom running smoothly with our professional plumbing services, backed by a warranty for all work done.",
+      image: "/our_services/Plumbing/Bathroom_Plumbing.jpg",
+      alt: "Close-up of a chrome bathtub faucet with white handles against a gray paneled wall.",
+      price: "Price starts at  $2,000",
+    },
+    {
+      heading: "Bathroom Tile",
+      paragraph:
+        "Refresh your bathroom with new tiles. Our installation service adds elegance without requiring a complete remodel.",
+      image: "/our_services/Bathroom/Bathroom_Tile.jpg",
+      alt: "White tiled shower wall with a chrome shower handle and hose.",
+      price: "Price starts at  $2,500",
+    },
+  ],
 
-	  bathroom: [
-		{
-		  heading: "Bathroom Remodel",
-		  paragraph:
-			"Redesign your bathroom with our expert remodeling services. Whether it’s a layout change or a full addition, we ensure top-notch results.",
-		  image: "/our_services/Bathroom/Bathroom_Remodel.jpg",
-		  alt: "Modern bathroom with a black and white bathtub, glass shower, and white vanity with a cushioned chair.",
-		  price: "Price starts at CAD $8,000",
-		},
-		{
-		  heading: "Bathroom Layout",
-		  paragraph:
-			"Maximize your bathroom space with a layout redesign. Small changes can add significant functionality and square footage.",
-		  image: "/our_services/Bathroom/Bathroom_Layout.jpg",
-		  alt: "Close-up of a pink pencil on a technical drawing with a white ruler in the corner.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Bathroom Design",
-		  paragraph:
-			"Work with our designers to create a stylish and functional bathroom tailored to your needs and preferences.",
-		  image: "/our_services/Bathroom/Bathroom_Design.jpg",
-		  alt: "Modern bathroom with white marble surfaces and gold-toned fixtures.",
-		  price: "Price starts at CAD $0",
-		},
-		{
-		  heading: "Bathroom Cabinetry",
-		  paragraph:
-			"Install durable and stylish cabinets designed for humid environments, perfect for maximizing your bathroom's storage.",
-		  image: "/our_services/Bathroom/Bathroom_Cabinetry.jpg",
-		  alt: "Modern bathroom with a scenic view, light green walls, white cabinetry, and decorative items on a gray granite countertop.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Heated Bathroom Floor",
-		  paragraph:
-			"Enjoy the luxury of heated floors installed by licensed electricians, adding comfort to your bathroom all year round.",
-		  image: "/our_services/Bathroom/Heated_Bathroom_Floor.jpg",
-		  alt: "Modern bathroom with black tiled heated floor, a light wood floating vanity, white rectangular sink, and a large window with a perforated metal screen.",
-		  price: "Price starts at CAD $3,500",
-		},
-		{
-		  heading: "Bathroom Expansion",
-		  paragraph:
-			"Expand your bathroom to include modern amenities like a walk-in shower, tub, or a combination of both for ultimate comfort.",
-		  image: "/our_services/Bathroom/Bathroom_Expansion.jpg",
-		  alt: "Modern grayscale bathroom with bathtub, window, rain shower head, toilet, floating vanity with sink, large mirror, and tropical plant.",
-		  price: "Price starts at CAD $7,000",
-		},
-		{
-		  heading: "Bathroom Shower",
-		  paragraph:
-			"Upgrade with a custom or prefabricated shower installation. Transform your bathroom with a new, stylish shower space.",
-		  image: "/our_services/Bathroom/Bathroom_Shower.jpg",
-		  alt: "Modern shower with white brick-pattern tiles and a dark grey shower fixture.",
-		  price: "Price starts at CAD $3,500",
-		},
-		{
-		  heading: "Bathroom Fixtures",
-		  paragraph:
-			"Order and install new fixtures with ease. We provide quick, hassle-free installation and free delivery for all purchases.",
-		  image: "/our_services/Bathroom/Bathroom_Fixtures.jpg",
-		  alt: "Modern bathroom sink with gray stone countertop, white vessel sink, black faucet, and vase with green leaves.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "Bathroom Plumbing",
-		  paragraph:
-			"Keep your bathroom running smoothly with our professional plumbing services, backed by a warranty for all work done.",
-		  image: "/our_services/Plumbing/Bathroom_Plumbing.jpg",
-		  alt: "Close-up of a chrome bathtub faucet with white handles against a gray paneled wall.",
-		  price: "Price starts at CAD $2,000",
-		},
-		{
-		  heading: "Bathroom Tile",
-		  paragraph:
-			"Refresh your bathroom with new tiles. Our installation service adds elegance without requiring a complete remodel.",
-		  image: "/our_services/Bathroom/Bathroom_Tile.jpg",
-		  alt: "White tiled shower wall with a chrome shower handle and hose.",
-		  price: "Price starts at CAD $2,500",
-		},
-	  ],
+  basement: [
+    {
+      heading: "Basement Finishing",
+      paragraph:
+        "Turn your basement into a functional and cozy living area with our expert finishing services.",
+      image: "/our_services/Basement/Basement_Finishing.jpg",
+      alt: "Finished basement with stone columns, wood-like laminate flooring, and recessed ceiling lights.",
+      price: "Price starts at  $10,000",
+    },
+    {
+      heading: "Basement Flooring",
+      paragraph:
+        "Explore a range of flooring options to make your basement comfortable and stylish.",
+      image: "/our_services/Basement/Basement_Flooring.jpg",
+      alt: "Basement with dark gray tile flooring, stone wall, white wainscoting, wooden bar with granite top, metal bar stools, armchair, and staircase.",
+      price: "Price starts at  $5,000",
+    },
+    {
+      heading: "Basement Remodel",
+      paragraph:
+        "Redesign your basement to boost its functionality and appearance with our remodeling services.",
+      image: "/our_services/Basement/Basement_Remodel.jpg",
+      alt: "A cozy basement living room with a sofa, coffee table, stone fireplace, flat-screen TV, and built-in shelves.",
+      price: "Price starts at  $12,000",
+    },
+    {
+      heading: "Basement Entertainment Center",
+      paragraph:
+        "Transform your basement into the ultimate entertainment hub with our custom solutions.",
+      image: "/our_services/Basement/Entertainment_Center.jpg",
+      alt: "Entertainment center with a mounted flat-screen TV, soundbar, and built-in white cabinets and shelves.",
+      price: "Price starts at  $8,000",
+    },
+    {
+      heading: "Basement Bathroom",
+      paragraph:
+        "Add a fully functional bathroom to your basement for convenience and increased home value.",
+      image: "/our_services/Basement/Basement_Bathroom.jpg",
+      alt: "Modern basement bathroom with a white freestanding bathtub, dark gray tiled walls, a small wooden stool with bottles on it, and a glass shower door.",
+      price: "Price starts at  $6,000",
+    },
+    {
+      heading: "Basement Waterproofing",
+      paragraph:
+        "Protect your basement from water damage with our reliable waterproofing solutions.",
+      image: "/our_services/Basement/Basement_Waterproofing.jpg",
+      alt: "Corner of a building foundation with black dimpled waterproofing membrane and exposed gray bricks above, surrounded by loose soil.",
+      price: "Price starts at  $5,500",
+    },
+    {
+      heading: "Basement Insulation",
+      paragraph:
+        "Keep your basement comfortable and energy-efficient year-round with proper insulation.",
+      image: "/our_services/Basement/Basement_Insulation.jpg",
+      alt: "Basement under construction with wall insulation, exposed wooden ceiling beams, and a sliding glass door.",
+      price: "Price starts at  $4,500",
+    },
+    {
+      heading: "Basement Bar",
+      paragraph:
+        "Design a stylish and functional bar in your basement, perfect for entertaining guests.",
+      image: "/our_services/Basement/Basement_Bar.jpg",
+      alt: "Modern basement bar with staircase, bar counter, and liquor shelves.",
+      price: "Price starts at  $7,000",
+    },
+    {
+      heading: "Basement Windows",
+      paragraph:
+        "Enhance your basement’s lighting and ventilation with new, energy-efficient windows.",
+      image: "/our_services/Basement/Basement_Windows.jpg",
+      alt: "Well-lit basement room with a window with white shutters and a checkered valance, next to a built-in bookshelf containing books, photos, and decorative items.",
+      price: "Price starts at  $3,500",
+    },
+  ],
 
-	  basement: [
-		{
-		  heading: "Basement Finishing",
-		  paragraph:
-			"Turn your basement into a functional and cozy living area with our expert finishing services.",
-		  image: "/our_services/Basement/Basement_Finishing.jpg",
-		  alt: "Finished basement with stone columns, wood-like laminate flooring, and recessed ceiling lights.",
-		  price: "Price starts at CAD $10,000",
-		},
-		{
-		  heading: "Basement Flooring",
-		  paragraph:
-			"Explore a range of flooring options to make your basement comfortable and stylish.",
-		  image: "/our_services/Basement/Basement_Flooring.jpg",
-		  alt: "Basement with dark gray tile flooring, stone wall, white wainscoting, wooden bar with granite top, metal bar stools, armchair, and staircase.",
-		  price: "Price starts at CAD $5,000",
-		},
-		{
-		  heading: "Basement Remodel",
-		  paragraph:
-			"Redesign your basement to boost its functionality and appearance with our remodeling services.",
-		  image: "/our_services/Basement/Basement_Remodel.jpg",
-		  alt: "A cozy basement living room with a sofa, coffee table, stone fireplace, flat-screen TV, and built-in shelves.",
-		  price: "Price starts at CAD $12,000",
-		},
-		{
-		  heading: "Basement Entertainment Center",
-		  paragraph:
-			"Transform your basement into the ultimate entertainment hub with our custom solutions.",
-		  image: "/our_services/Basement/Entertainment_Center.jpg",
-		  alt: "Entertainment center with a mounted flat-screen TV, soundbar, and built-in white cabinets and shelves.",
-		  price: "Price starts at CAD $8,000",
-		},
-		{
-		  heading: "Basement Bathroom",
-		  paragraph:
-			"Add a fully functional bathroom to your basement for convenience and increased home value.",
-		  image: "/our_services/Basement/Basement_Bathroom.jpg",
-		  alt: "Modern basement bathroom with a white freestanding bathtub, dark gray tiled walls, a small wooden stool with bottles on it, and a glass shower door.",
-		  price: "Price starts at CAD $6,000",
-		},
-		{
-		  heading: "Basement Waterproofing",
-		  paragraph:
-			"Protect your basement from water damage with our reliable waterproofing solutions.",
-		  image: "/our_services/Basement/Basement_Waterproofing.jpg",
-		  alt: "Corner of a building foundation with black dimpled waterproofing membrane and exposed gray bricks above, surrounded by loose soil.",
-		  price: "Price starts at CAD $5,500",
-		},
-		{
-		  heading: "Basement Insulation",
-		  paragraph:
-			"Keep your basement comfortable and energy-efficient year-round with proper insulation.",
-		  image: "/our_services/Basement/Basement_Insulation.jpg",
-		  alt: "Basement under construction with wall insulation, exposed wooden ceiling beams, and a sliding glass door.",
-		  price: "Price starts at CAD $4,500",
-		},
-		{
-		  heading: "Basement Bar",
-		  paragraph:
-			"Design a stylish and functional bar in your basement, perfect for entertaining guests.",
-		  image: "/our_services/Basement/Basement_Bar.jpg",
-		  alt: "Modern basement bar with staircase, bar counter, and liquor shelves.",
-		  price: "Price starts at CAD $7,000",
-		},
-		{
-		  heading: "Basement Windows",
-		  paragraph:
-			"Enhance your basement’s lighting and ventilation with new, energy-efficient windows.",
-		  image: "/our_services/Basement/Basement_Windows.jpg",
-		  alt: "Well-lit basement room with a window with white shutters and a checkered valance, next to a built-in bookshelf containing books, photos, and decorative items.",
-		  price: "Price starts at CAD $3,500",
-		},
-	  ],
-
-	  attic: [
-		{
-		  heading: "Attic Finishing",
-		  paragraph:
-			"Turn your attic into a functional living space with our professional finishing services.",
-		  image: "/our_services/Attic/Attic_Finishing.jpg",
-		  alt: "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
-		  price: "Price starts at CAD $10,000",
-		},
-		{
-		  heading: "Attic Ladder",
-		  paragraph:
-			"Make accessing your attic easier with a professionally installed attic ladder.",
-		  image: "/our_services/Attic/Attic_Ladder2.jpg",
-		  alt: "Foldable wooden attic ladder extended from a ceiling opening.",
-		  price: "Price starts at CAD $1,500",
-		},
-		{
-		  heading: "Attic Insulation",
-		  paragraph:
-			"Keep your home comfortable and energy-efficient with proper attic insulation.",
-		  image: "/our_services/Attic/Attic_Insulation.jpg",
-		  alt: "A hose blowing loose white insulation into an unfinished attic.",
-		  price: "Price starts at CAD $3,500",
-		},
-		{
-		  heading: "Attic Drywall",
-		  paragraph:
-			"Add durable and stylish walls to your attic with our drywall installation services.",
-		  image: "/our_services/Attic/Attic_Drywall.jpg",
-		  alt: "Newly drywalled attic with recessed lighting and an unfinished built-in shelf or closet space.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Attic Windows and Skylights",
-		  paragraph:
-			"Improve your attic's natural light and ventilation with new windows and skylights.",
-		  image: "/our_services/Attic/Attic_Windows_Skylights.jpg",
-		  alt: "Two skylights with wooden frames installed in an angled white ceiling of an attic.",
-		  price: "Price starts at CAD $2,800",
-		},
-		{
-		  heading: "Attic Storage Solutions",
-		  paragraph:
-			"Make the most of your attic with custom storage options tailored to your needs.",
-		  image: "/our_services/Attic/Attic_Storage.jpg",
-		  alt: "Built-in attic storage with shoe compartments and drawers, some drawers are open showing clothes inside.",
-		  price: "Price starts at CAD $3,000",
-		},
-		{
-		  heading: "Attic Ventilation",
-		  paragraph:
-			"Enhance airflow and energy efficiency in your attic with our ventilation solutions.",
-		  image: "/our_services/Attic/Attic_Ventilation.jpg",
-		  alt: "Close-up view of an attic's exterior gable with beige siding and a circular white vent.",
-		  price: "Price starts at CAD $2,500",
-		},
-		{
-		  heading: "Attic Lighting",
-		  paragraph:
-			"Brighten your attic with efficient and stylish lighting options for any space.",
-		  image: "/our_services/Attic/Attic_Lighting.jpg",
-		  alt: "Interior of an attic with exposed wooden beams, a ceiling fan, a yellow painted section of wall, a window, and a small wall-mounted light.",
-		  price: "Price starts at CAD $1,800",
-		},
-		{
-		  heading: "Attic Heating and Cooling",
-		  paragraph:
-			"Enjoy year-round comfort in your attic with effective heating and cooling systems.",
-		  image: "/our_services/Attic/Attic_Heating_Cooling.jpg",
-		  alt: "Interior of an attic with wooden panels and two large, flexible air ducts.",
-		  price: "Price starts at CAD $4,000",
-		},
-		{
-		  heading: "Attic Bathroom Addition",
-		  paragraph:
-			"Boost your home's value and functionality with a professionally installed attic bathroom.",
-		  image: "/our_services/Attic/Attic_Bathroom_Addition.jpg",
-		  alt: "Small bathroom with pastel green and white decor, featuring a vanity, pedestal sink, toilet, and wall-mounted mirror cabinet.",
-		  price: "Price starts at CAD $7,000",
-		},
-	  ]
-
+  attic: [
+    {
+      heading: "Attic Finishing",
+      paragraph:
+        "Turn your attic into a functional living space with our professional finishing services.",
+      image: "/our_services/Attic/Attic_Finishing.jpg",
+      alt: "Cozy finished attic living area with wooden beams, gray sofa, hanging wicker chair, wooden chairs, and a round coffee table.",
+      price: "Price starts at  $10,000",
+    },
+    {
+      heading: "Attic Ladder",
+      paragraph:
+        "Make accessing your attic easier with a professionally installed attic ladder.",
+      image: "/our_services/Attic/Attic_Ladder2.jpg",
+      alt: "Foldable wooden attic ladder extended from a ceiling opening.",
+      price: "Price starts at  $1,500",
+    },
+    {
+      heading: "Attic Insulation",
+      paragraph:
+        "Keep your home comfortable and energy-efficient with proper attic insulation.",
+      image: "/our_services/Attic/Attic_Insulation.jpg",
+      alt: "A hose blowing loose white insulation into an unfinished attic.",
+      price: "Price starts at  $3,500",
+    },
+    {
+      heading: "Attic Drywall",
+      paragraph:
+        "Add durable and stylish walls to your attic with our drywall installation services.",
+      image: "/our_services/Attic/Attic_Drywall.jpg",
+      alt: "Newly drywalled attic with recessed lighting and an unfinished built-in shelf or closet space.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Attic Windows and Skylights",
+      paragraph:
+        "Improve your attic's natural light and ventilation with new windows and skylights.",
+      image: "/our_services/Attic/Attic_Windows_Skylights.jpg",
+      alt: "Two skylights with wooden frames installed in an angled white ceiling of an attic.",
+      price: "Price starts at  $2,800",
+    },
+    {
+      heading: "Attic Storage Solutions",
+      paragraph:
+        "Make the most of your attic with custom storage options tailored to your needs.",
+      image: "/our_services/Attic/Attic_Storage.jpg",
+      alt: "Built-in attic storage with shoe compartments and drawers, some drawers are open showing clothes inside.",
+      price: "Price starts at  $3,000",
+    },
+    {
+      heading: "Attic Ventilation",
+      paragraph:
+        "Enhance airflow and energy efficiency in your attic with our ventilation solutions.",
+      image: "/our_services/Attic/Attic_Ventilation.jpg",
+      alt: "Close-up view of an attic's exterior gable with beige siding and a circular white vent.",
+      price: "Price starts at  $2,500",
+    },
+    {
+      heading: "Attic Lighting",
+      paragraph:
+        "Brighten your attic with efficient and stylish lighting options for any space.",
+      image: "/our_services/Attic/Attic_Lighting.jpg",
+      alt: "Interior of an attic with exposed wooden beams, a ceiling fan, a yellow painted section of wall, a window, and a small wall-mounted light.",
+      price: "Price starts at  $1,800",
+    },
+    {
+      heading: "Attic Heating and Cooling",
+      paragraph:
+        "Enjoy year-round comfort in your attic with effective heating and cooling systems.",
+      image: "/our_services/Attic/Attic_Heating_Cooling.jpg",
+      alt: "Interior of an attic with wooden panels and two large, flexible air ducts.",
+      price: "Price starts at  $4,000",
+    },
+    {
+      heading: "Attic Bathroom Addition",
+      paragraph:
+        "Boost your home's value and functionality with a professionally installed attic bathroom.",
+      image: "/our_services/Attic/Attic_Bathroom_Addition.jpg",
+      alt: "Small bathroom with pastel green and white decor, featuring a vanity, pedestal sink, toilet, and wall-mounted mirror cabinet.",
+      price: "Price starts at  $7,000",
+    },
+  ],
 };
 
 /*   export const ourServicesCardsData = {

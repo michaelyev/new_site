@@ -9,7 +9,7 @@ export const contacts = {
     phone: "206-966-0788",
     email: "sales@renova.contractors",
   },
-  victoria: {
+  seattle: {
     address: "221 1st Avenue West #247 Seattle, WA 98119 United States",
     phone: "206-255-2708",
     email: "sales@renova.contractors",
