@@ -79,136 +79,57 @@ export interface Service {
 
 export const dropdowns: { [key: string]: Service[] } = {
 	services: [
+		
 		{
-			id: "tile",
-			link: "/tile-installation-victoria",
-			text: "Tile Installation",
+			id: "adu",
+			link: "/basement-waterproofing-seattle",
+			text: "Basement Waterproofing",
 			types: [
-				{ name: "Floor Tile", link: "/tile-installation/floor-tile" },
 				{
 					name: "Bathroom Tile",
-					link: "/tile-installation/bathroom-tile",
-				},
-				{ name: "Shower Tile", link: "/tile-installation/shower-tile" },
-				{
-					name: "Backsplash Tile",
-					link: "/tile-installation/backsplash-tile",
+					link: "/bathroom-remode/bathroom-tile",
 				},
 				{
-					name: "Ceramic Tile",
-					link: "/tile-installation/ceramic-tile",
+					name: "Bathroom Cabinetry",
+					link: "/cabinet-installation/bathroom-cabinetry",
 				},
 				{
-					name: "Porcelain Tile",
-					link: "/tile-installation/porcelain-tile",
-				},
-				{ name: "Mosaic Tile", link: "/tile-installation/mosaic-tile" },
-				{
-					name: "Heated Tile Floor",
-					link: "/tile-installation/heated-tile-floor",
+					name: "Bathroom Plumbing",
+					link: "/bathroom-remode/bathroom-plumbing",
 				},
 				{
-					name: "Basement Floor Tile",
-					link: "/tile-installation/basement-floor-tile",
-				},
-				{ name: "Subway Tile", link: "/service/subway-tile" },
-				{
-					name: "Grout Cleaning",
-					link: "/tile-installation/grout-tile-cleaning",
+					name: "Bathroom Fixture",
+					link: "/bathroom-remode/bathroom-fixtures",
 				},
 				{
-					name: "Fireplace Tile",
-					link: "/tile-installation/fireplace-tile",
-				},
-				{
-					name: "Outdoor Tile",
-					link: "/tile-installation/outdoor-tile",
+					name: "Bathroom Shower",
+					link: "/bathroom-remode/bathroom-shower",
 				},
 			],
-		},
-		{
-			id: "countertops",
-			link: "/countertop-installation-victoria",
-			text: "Countertops",
+		},{
+			id: "adu",
+			link: "/adu-builder-seattle",
+			text: "ADU and DADU",
 			types: [
 				{
-					name: "Quartz Countertops",
-					link: "/countertop-installation/quartz-countertops",
+					name: "Bathroom Tile",
+					link: "/bathroom-remode/bathroom-tile",
 				},
 				{
-					name: "Granite Countertops",
-					link: "/countertop-installation/granite-countertops",
+					name: "Bathroom Cabinetry",
+					link: "/cabinet-installation/bathroom-cabinetry",
 				},
 				{
-					name: "Laminate Countertops",
-					link: "/countertop-installation/laminate-countertops",
+					name: "Bathroom Plumbing",
+					link: "/bathroom-remode/bathroom-plumbing",
 				},
 				{
-					name: "Soapstone Countertops",
-					link: "/countertop-installation/soapstone-countertops",
+					name: "Bathroom Fixture",
+					link: "/bathroom-remode/bathroom-fixtures",
 				},
 				{
-					name: "Butcher Block",
-					link: "/countertop-installation/butcher-block",
-				},
-				{
-					name: "Concrete Countertop",
-					link: "/countertop-installation/concrete-countertops",
-				},
-				{
-					name: "Stainless Steel Countertops",
-					link: "/countertop-installation/stainless-steel-countertops",
-				},
-				{
-					name: "Porcelain Countertop",
-					link: "/countertop-installation/porcelain-countertops",
-				},
-				{
-					name: "Countertop Repair",
-					link: "/countertop-installation/countertop-repair",
-				},
-			],
-		},
-		{
-			id: "cabinets",
-			link: "/cabinet-installation-victoria",
-			text: "Cabinet Installation",
-			types: [
-				{
-					name: "Cabinet Design",
-					link: "/cabinet-installation/cabinet-design",
-				},
-				{
-					name: "Bathroom Cabinets",
-					link: "/cabinet-installation/bathroom-cabinets",
-				},
-				{
-					name: "Kitchen Cabinets",
-					link: "/cabinet-installation/kitchen-cabinets",
-				},
-				{
-					name: "Cabinet Refinishing",
-					link: "/cabinet-installation/cabinet-refinishing",
-				},
-				{
-					name: "Built-in Cabinets",
-					link: "/cabinet-installation/built-in-cabinets",
-				},
-				{
-					name: "Cabinet Door Replacement",
-					link: "/cabinet-installation/cabinet-door-replacement",
-				},
-				{
-					name: "Cabinet Repair",
-					link: "/cabinet-installation/cabinet-repair",
-				},
-				{
-					name: "Cabinet Painting",
-					link: "/painting/cabinet-painting",
-				},
-				{
-					name: "Storage Cabinets",
-					link: "/cabinet-installation/storage-cabinets",
+					name: "Bathroom Shower",
+					link: "/bathroom-remode/bathroom-shower",
 				},
 			],
 		},
@@ -297,70 +218,6 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		{
-			id: "flooring",
-			link: "/flooring-victoria",
-			text: "Flooring",
-			types: [
-				{
-					name: "Hardwood Flooring",
-					link: "/flooring/hardwood-flooring",
-				},
-				{
-					name: "Laminate Flooring",
-					link: "/flooring/laminate-flooring",
-				},
-				{ name: "Carpet", link: "/flooring/carpet" },
-				{ name: "LVT Flooring", link: "/flooring/lvt-flooring" },
-			],
-		},
-		{
-			id: "roofing",
-			link: "/roofing-victoria",
-			text: "Roofing",
-			types: [
-				{
-					name: "Roof Repair",
-					link: "/roofing/roof-repair",
-				},
-				{
-					name: "Metal Roofing",
-					link: "/roofing/metal-roofing",
-				},
-				{
-					name: "Roof Replacement",
-					link: "/roofing/roof-replacement",
-				},
-				{
-					name: "Commercial Roofing",
-					link: "/roofing/commercial-roofing",
-				},
-				{
-					name: "Flat Roofing",
-					link: "/roofing/flat-roofing",
-				},
-				{
-					name: "Skylights",
-					link: "/roofing/skylights",
-				},
-				{
-					name: "Shingles Roof",
-					link: "/roofing/shingles-roof",
-				},
-				{
-					name: "Asphalt Roofing",
-					link: "/roofing/asphalt-roofing",
-				},
-				{
-					name: "Gutter Repair",
-					link: "/roofing/gutter-repair",
-				},
-				{
-					name: "Gutter Cleaning",
-					link: "/roofing/gutter-cleaning",
-				},
-			],
-		},
 		/* {
 			id: "doors",
 			link: "/door-installation",
@@ -392,7 +249,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 		}, */
 		{
 			id: "bathrooms",
-			link: "/bathroom-remodel-victoria",
+			link: "/bathroom-remodel-seattle",
 			text: "Bathroom Remodel",
 			types: [
 				{
@@ -456,48 +313,10 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		{
-			id: "masonry",
-			link: "/masonry-contractors-victoria",
-			text: "Masonry Services",
-			types: [
-				{
-					name: "Brick Laying and Repair",
-					link: "/masonry-contractors/brick-laying-and-repair",
-				},
-				{
-					name: "Stone Masonry",
-					link: "/masonry-contractors/stone-masonry",
-				},
-				{
-					name: "Seismic Retrofitting",
-					link: "/masonry-contractors/seismic-retrofitting",
-				},
-				{
-					name: "Chimney Masonry",
-					link: "/masonry-contractors/chimney-masonry",
-				},
-				{
-					name: "Concrete Block",
-					link: "/masonry-contractors/concrete-block",
-				},
-				{
-					name: "Masonry Restoration",
-					link: "/masonry-contractors/masonry-restoration",
-				},
-				{
-					name: "Stone Veneer",
-					link: "/masonry-contractors/stone-veneer",
-				},
-				{
-					name: "Commercial Masonry",
-					link: "/masonry-contractors/commercial-masonry",
-				},
-			],
-		},
+		
 		{
 			id: "attic",
-			link: "/attic-finishing-victoria",
+			link: "/attic-finishing-seattle",
 			text: "Attic Finishing",
 			types: [
 				{
@@ -579,7 +398,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 		}, */
 		{
 			id: "basement",
-			link: "/basement-finishing-victoria",
+			link: "/basement-finishing-seattle",
 			text: "Basement Finishing",
 			types: [
 				{
@@ -658,7 +477,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 		}, */
 		{
 			id: "kitchen",
-			link: "/kitchen-remodel-victoria",
+			link: "/kitchen-remodel-seattle",
 			text: "Kitchen Remodel",
 			types: [
 				{
@@ -715,48 +534,7 @@ export const dropdowns: { [key: string]: Service[] } = {
 				},
 			],
 		}, */
-		{
-			id: "decking",
-			link: "/deck-building-victoria",
-			text: "Deck Building",
-			types: [
-				{ name: "Trex Deck", link: "/deck-building/trex-decking" },
-				{
-					name: "Composite Deck",
-					link: "/deck-building/composite-deck",
-				},
-				{ name: "Custom Deck", link: "/deck-building/custom-deck" },
-				{
-					name: "Pool Deck Construction",
-					link: "/deck-building/pool-deck-construction",
-				},
-				{
-					name: "Rooftop Deck Building",
-					link: "/deck-building/rooftop-deck-building",
-				},
-				{ name: "Deck Repair", link: "/deck-building/deck-repair" },
-				{
-					name: "Deck Restoration",
-					link: "/deck-building/deck-restoration",
-				},
-				{
-					name: "Deck Railing Installation",
-					link: "/deck-building/deck-railing",
-				},
-				{
-					name: "Building Deck Stairs and Steps",
-					link: "/deck-building/building-deck-stairs-and-steps",
-				},
-				{
-					name: "Deck Replacement",
-					link: "/deck-building/deck-replacement",
-				},
-				{
-					name: "Timber Decking",
-					link: "/deck-building/timber-decking",
-				},
-			],
-		},
+		
 		/* {
 			id: "siding",
 			link: "/siding-installation-victoria",

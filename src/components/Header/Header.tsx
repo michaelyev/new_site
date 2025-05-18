@@ -165,7 +165,7 @@ export const Header: React.FC = (): JSX.Element => {
 							/>
 						</a>
 						<a
-							href="sms:250-880-9385"
+							href="sms:206-255-2708"
 							className="hover:scale-110 transition-transform duration-300"
 						>
 							<Image

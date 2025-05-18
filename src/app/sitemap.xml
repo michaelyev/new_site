@@ -1,63 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/</loc>
+        <loc>https://www.renovaremodels.com/</loc>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
+
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/tile-installation-victoria</loc>
+        <loc>https://www.renovaremodels.com/bathroom-remodel-seattle</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://www.renovaremodels.com/attic-finishing-seattle</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/countertop-installation-victoria</loc>
+        <loc>https://www.renovaremodels.com/basement-finishing-seattle</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/cabinet-installation-victoria</loc>
+        <loc>https://www.renovaremodels.com/kitchen-remodel-seattle</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/flooring-victoria</loc>
+        <loc>https://www.renovaremodels.com/basement-waterproofing-seattle</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.victoriahomeremodeling.ca/roofing-victoria</loc>
+        <loc>https://www.renovaremodels.com/adu-builder-seattle</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/bathroom-remodel-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/masonry-contractors-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/attic-finishing-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/basement-finishing-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/kitchen-remodel-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.victoriahomeremodeling.ca/deck-building-victoria</loc>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
+
 </urlset>

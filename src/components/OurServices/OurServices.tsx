@@ -8,7 +8,6 @@ import { ourServicesCardsData } from "@/constants/ourServices/ourServicesCardsDa
 import { ServicesCard } from "../ServicesCard/ServicesCard";
 import { ourServicesLocalLinks } from "@/constants/ourServices/ourServicesLoccalLinks";
 import { locationNames } from "@/constants/costKeywords/costKeywords";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 interface OurServicesProps {
@@ -24,10 +23,10 @@ export const OurServices: React.FC<OurServicesProps> = ({
 	paragraph,
 	ourServicesMarkdown,
 	category = "all",
-	location = "victoria",
+	location = "seattle",
 }) => {
 	const clickedService = category;
-	let urlLink = ourServicesLocalLinks[location] || {};
+	let urlLink = ourServicesLocalLinks.seattle;
 	let link = urlLink[clickedService] || "";
 
 	return (

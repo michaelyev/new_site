@@ -1,5 +1,5 @@
 export const ourServicesLocalLinks = {
-	victoria: {
+	seattle: {
 		cabinets: "cabinet-installation-victoria",
 		deck: "deck-building-victoria",
 		countertops: "countertop-installation-victoria",
@@ -9,16 +9,16 @@ export const ourServicesLocalLinks = {
 		architecture: "architectural-service-victoria",
 		hvac: "hvac-installation-victoria",
 		plumbing: "plumbing-services-victoria",
-		kitchen: "kitchen-remodel-victoria",
+		kitchen: "kitchen-remodel-seattle",
 		doors: "door-installation-victoria",
-		bathroom: "bathroom-remodel-victoria",
+		bathroom: "bathroom-remodel-seattle",
 		roofing: "roofing-victoria",
 		siding: "siding-installation-victoria",
 		excavation: "excavation-contractors-victoria",
-		basement: "basement-finishing-victoria",
+		basement: "basement-finishing-seattle",
 		painting: "painters-victoria",
 		masonry: "masonry-contractors-victoria",
-		attic: "attic-finishing-victoria",
+		attic: "attic-finishing-seattle",
 		tile: "tile-installation-victoria",
 		landscaping: "landscaping-victoria",
 	},
