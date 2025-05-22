@@ -41,9 +41,9 @@ import Image from "next/image";
 import { HeroImage } from "@/components/HeroImage";
 
 export const metadata: Metadata = {
-  title: "Seattle Remodeling Contractor | Renova Contractors LLC",
+  title: "Seattle Based Remodeling Contractors | Renova CContractors",
   description:
-    "Renova delivers top-quality renovation services across Seattle. From kitchens and bathrooms to basements and full remodels—schedule a free consultation with flexible financing options.",
+    "Renova provides renovation services in Seattle. From kitchens and bathrooms to basements and full remodels. Schedule your consultation for Free estimate.",
 };
 
 export default function Home(): JSX.Element {
