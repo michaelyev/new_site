@@ -1,0 +1,40 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://www.renova.contractors/",
+        "permanent": true
+      },
+      {
+        "source": "/bathroom-remodel-seattle",
+        "destination": "https://www.renova.contractors/bathroom-remodel-seattle",
+        "permanent": true
+      },
+      {
+        "source": "/attic-finishing-seattle",
+        "destination": "https://www.renova.contractors/attic-finishing-seattle",
+        "permanent": true
+      },
+      {
+        "source": "/basement-finishing-seattle",
+        "destination": "https://www.renova.contractors/basement-finishing-seattle",
+        "permanent": true
+      },
+      {
+        "source": "/kitchen-remodel-seattle",
+        "destination": "https://www.renova.contractors/kitchen-remodel-seattle",
+        "permanent": true
+      },
+      {
+        "source": "/basement-waterproofing-seattle",
+        "destination": "https://www.renova.contractors/basement-finishing-seattle",
+        "permanent": true
+      },
+      {
+        "source": "/adu-builder-seattle",
+        "destination": "https://www.renova.contractors/",
+        "permanent": true
+      }
+    ]
+  }
+  
